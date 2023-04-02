@@ -6,8 +6,8 @@
   </head>
   <body>
     <header class="main-header">
-      <a class="main-header__logo">
-        <img class="main-header__logo-img" src="../source/img/logo-sedona.svg" width="185" height="96" alt="Логотип Седоны.">
+      <a class="main-header__logo" href="index.html">
+        <img class="main-header__logo-img" src="img/logo-sedona.svg" width="185" height="96" alt="Логотип Седоны.">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
@@ -16,13 +16,13 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__link" href="../source/index.html">Главная</a>
+              <a class="main-nav__link" href="index.html">Главная</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="../source/catalog.html">Фото и видео</a>
+              <a class="main-nav__link" href="catalog.html">Фото и видео</a>
             </li>
             <li class="main-nav__item  main-nav__item--current">
-              <a class="main-nav__link" href="../source/form.html">Форма Отзыва</a>
+              <a class="main-nav__link" href="form.html">Форма Отзыва</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="https://htmlacademy.ru/">HTML ACADEMY</a>
@@ -35,7 +35,7 @@
       <header class="main-container__hero-catalog hero-catalog">
         <h1 class="visually-hidden">Форма Седоны.</h1>
         <div class="hero-catalog__wrapper">
-          <img class="hero-catalog__image" src="../source/img/catalog-mobile/sedona-catalog.svg" width="229" height="39" alt="Приветсвенная надпись Седона.">
+          <img class="hero-catalog__image" src="img/catalog-mobile/sedona-catalog.svg" width="229" height="39" alt="Приветсвенная надпись Седона.">
         </div>
       </header>
       <section class="form">
@@ -50,11 +50,11 @@
             <legend class="field__title">Представьтесь:</legend>
             <ul class="field__list">
               <li class="field__item field-input">
-                <label class="field-input__label" for="user-name">ИМЯ*:</label>
+                <label class="field-input__label" for="user-name">Имя*:</label>
                 <input class="field-input__input" id="user-name" type="text" name="user-name" value="Пётр" required>
               </li>
               <li class="field__item field-input">
-                <label class="field-input__label" for="user-surname">ФАМИЛИЯ*:</label>
+                <label class="field-input__label" for="user-surname">Фамилия*:</label>
                 <input class="field-input__input" id="user-surname" type="text" name="user-surname" value="Пустота" required>
               </li>
               <li class="field__item field-input">
@@ -77,7 +77,7 @@
             </ul>
           </fieldset>
           <fieldset class="field__group">
-            <legend class="field__title">ВАше Общее впечатление:</legend>
+            <legend class="field__title">Ваше общее впечатление:</legend>
             <ul class="field__list">
               <li class="field__item radio">
                 <input class="radio__input" id="positive" type="radio" name="impression" value="positive" checked>
@@ -94,7 +94,7 @@
             </ul>
           </fieldset>
           <fieldset class="field__group">
-            <legend class="field__title">посещенные достопримечательности:</legend>
+            <legend class="field__title">Посещенные достопримечательности:</legend>
             <ul class="field__list">
               <li class="field__item checkbox">
                 <input class="checkbox__input" id="bridge" type="checkbox" name="bridge" checked>
@@ -122,7 +122,7 @@
               <textarea class="field__textarea" name="emotion" rows="4" placeholder="Опишите подробно все свои восторги"></textarea>
             </label>
           </fieldset>
-          <button class="form__button">ОТПРАВИТЬ ОТЗЫВ</button>
+          <button class="form__button">Отправить отзыв</button>
           <span class="form__necessarily">* — обязательные поля</span>
         </form>
       </section>
@@ -158,9 +158,9 @@
     </footer>
     <div class="modal-form-container">
       <div class="modal-form">
-        <h2 class="modal-form__title">ЧТО-ТО ПОШЛО НЕ ТАК!</h2>
+        <h2 class="modal-form__title">Что-то пошло не так!</h2>
         <p class="modal-form__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-        <a class="modal-form__link" href="../source/form.html">OK</a>
+        <a class="modal-form__link" href="form.html">OK</a>
       </div>
     </div>
 
@@ -168,7 +168,7 @@
       <div class="modal-form">
         <h2 class="modal-form__title">Ваш отзыв отправлен!</h2>
         <p class="modal-form__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы опубликуем его на сайте.</p>
-        <a class="modal-form__link" href="../source/form.html">ЗАкРЫТЬ ОКНО</a>
+        <a class="modal-form__link" href="form.html">Закрыть окно</a>
       </div>
     </div>
   </body>
