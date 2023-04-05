@@ -1,0 +1,19 @@
+.main-nav {
+  background-color: $blue-color;
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.main-nav__link {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+}
