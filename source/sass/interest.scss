@@ -1,8 +1,11 @@
-.interest__title {
+.interest {
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
+}
+
+.interest__title {
   text-align: center;
   text-transform: uppercase;
   color: #000000;
@@ -19,7 +22,7 @@
 }
 
 .interest__link {
-  background-color: $color-blue;
+  background-color: #81b3d2;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 21px;
