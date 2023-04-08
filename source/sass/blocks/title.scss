@@ -1,0 +1,24 @@
+@use "./variables.scss" as *;
+
+.title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $black;
+}
+
+.title--bright {
+  color: $white;
+}
+
+.title--link {
+  background-color: $blue;
+}
+
+.title--lowercase {
+  text-transform: none;
+  text-align: start;
+}
