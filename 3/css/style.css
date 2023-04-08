@@ -12,6 +12,55 @@
   src: url("../fonts/ptsansbold.woff2") format("woff2"), url("../fonts/ptsansbold.woff") format("woff");
   font-display: swap;
 }
+body {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+}
+
+.title--white {
+  color: #ffffff;
+}
+
+.title--link {
+  background-color: #81b3d2;
+}
+
+.description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.description--white {
+  color: #ffffff;
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  background-color: #81b3d2;
+}
+
 .visually-hidden {
   position: absolute;
   overflow: hidden;
@@ -21,24 +70,6 @@
   margin: -1px;
   padding: 0;
   border: 0;
-}
-
-.additional__title {
-  font-family: "PT Sans", sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  text-transform: uppercase;
-  color: #000000;
-}
-
-.additional__description {
-  font-family: "PT Sans", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  text-transform: uppercase;
-  color: #333333;
 }
 
 .advantages__list {
@@ -51,62 +82,16 @@
   background-color: #81b3d2;
 }
 
-.advantages__intro {
-  font-family: "PT Sans", sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #000000;
-}
-
-.advantages__intro-description {
-  font-family: "PT Sans", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  color: #333333;
-}
-
-.advantages__title {
-  font-family: "PT Sans", sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #ffffff;
-}
-
-.advantages__number {
-  font-family: "PT Sans", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #ffffff;
-}
-
-.advantages__description {
-  font-family: "PT Sans", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #ffffff;
+.advantages__additional {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .field__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
-}
-
-.form__button {
-  background-color: #81b3d2;
 }
 
 .hero-catalog__wrapper {
@@ -125,71 +110,6 @@
   background-size: cover;
 }
 
-.interest {
-  font-family: "PT Sans", sans-serif;
-  font-weight: 700;
-  font-size: 21px;
-  line-height: 26px;
-}
-
-.interest__title {
-  text-align: center;
-  text-transform: uppercase;
-  color: #000000;
-}
-
-.interest__description {
-  font-family: "PT Sans", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #333333;
-}
-
-.interest__link {
-  background-color: #81b3d2;
-  font-family: "PT Sans", sans-serif;
-  font-weight: 700;
-  font-size: 21px;
-  line-height: 26px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #ffffff;
-}
-
-.main-footer__hashtag {
-  font-family: "PT Sans", sans-serif;
-  font-weight: 700;
-  font-size: 21px;
-  line-height: 26px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #000000;
-}
-
-.main-nav {
-  background-color: #81b3d2;
-}
-
-.main-nav__list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-.main-nav__link {
-  font-family: "PT Sans", sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  text-decoration: none;
-  text-align: center;
-  text-transform: uppercase;
-  color: #ffffff;
-}
-
 .social {
   margin: 0;
   padding: 0;
@@ -198,5 +118,26 @@
 
 .social-link {
   background-color: #81b3d2;
+}
+
+.presentation__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.photo-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.author-description {
+  text-align: left;
+  text-transform: none;
+  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */
