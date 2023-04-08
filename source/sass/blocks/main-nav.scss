@@ -1,7 +1,7 @@
-
+@use "../blocks/variables.scss" as *;
 
 .main-nav {
-  background-color: $problem;
+  background-color: $blue;
 }
 
 .main-nav__list {
