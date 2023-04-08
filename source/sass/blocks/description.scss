@@ -10,6 +10,17 @@
   text-decoration: none;
 }
 
-.description--white {
+.description--bright {
   color: $white;
+}
+
+.description--author {
+  text-align: start;
+  text-transform: none;
+}
+
+.description--card {
+  font-weight: 700;
+  color: $black;
+  text-align: start;
 }

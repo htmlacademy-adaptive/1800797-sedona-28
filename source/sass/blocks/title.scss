@@ -10,10 +10,15 @@
   color: $black;
 }
 
-.title--white {
+.title--bright {
   color: $white;
 }
 
 .title--link {
   background-color: $blue;
+}
+
+.title--lowercase {
+  text-transform: none;
+  text-align: start;
 }
