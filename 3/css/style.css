@@ -32,12 +32,17 @@ body {
   color: #000000;
 }
 
-.title--white {
+.title--bright {
   color: #ffffff;
 }
 
 .title--link {
   background-color: #81b3d2;
+}
+
+.title--lowercase {
+  text-transform: none;
+  text-align: start;
 }
 
 .description {
@@ -50,8 +55,19 @@ body {
   text-decoration: none;
 }
 
-.description--white {
+.description--bright {
   color: #ffffff;
+}
+
+.description--author {
+  text-align: start;
+  text-transform: none;
+}
+
+.description--card {
+  font-weight: 700;
+  color: #000000;
+  text-align: start;
 }
 
 .main-nav__list {
@@ -74,16 +90,19 @@ body {
 
 .advantages__list {
   margin: 0;
+  margin-bottom: 38px;
   padding: 0;
   list-style-type: none;
 }
 
 .advantages__wrapper {
   background-color: #81b3d2;
+  margin-bottom: 24px;
 }
 
 .advantages__additional {
   margin: 0;
+  margin-bottom: 46px;
   padding: 0;
   list-style-type: none;
 }
@@ -122,22 +141,50 @@ body {
 
 .presentation__list {
   margin: 0;
+  margin-left: 20px;
+  margin-right: 20px;
   padding: 0;
   list-style-type: none;
 }
 
-.photo-title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 21px;
-  color: #000000;
-  text-transform: uppercase;
-  text-decoration: none;
+.presentation__item {
+  margin-bottom: 25px;
 }
 
-.author-description {
-  text-align: left;
-  text-transform: none;
-  text-decoration: none;
+.presentation__photo {
+  margin: 0;
+  padding: 0;
+}
+
+.presentation__video {
+  margin-bottom: 33px;
+}
+
+.main-container__hero {
+  margin-bottom: 32px;
+}
+
+.main-container__interest {
+  margin-bottom: 49px;
+}
+
+.main-container__map {
+  margin-bottom: 41px;
+}
+
+.main-container__hero-catalog {
+  margin-bottom: 17px;
+}
+
+.main-container__presentation {
+  margin-bottom: 17px;
+}
+
+.main-footer__hashtag {
+  margin-bottom: 30px;
+}
+
+.main-footer__social {
+  margin-bottom: 30px;
 }
 /*# sourceMappingURL=style.css.map */
