@@ -1,0 +1,10 @@
+@use "./variables.scss" as *;
+
+.photo-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  color: $black;
+  text-transform: uppercase;
+  text-decoration: none;
+}

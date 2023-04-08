@@ -1,0 +1,15 @@
+@use "./variables.scss" as *;
+
+.description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: $grey;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.description--white {
+  color: $white;
+}

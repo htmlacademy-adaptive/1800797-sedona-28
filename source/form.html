@@ -17,16 +17,16 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__link" href="index.html">Главная</a>
+              <a class="main-nav__link title title--white" href="index.html">Главная</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="catalog.html">Фото и видео</a>
+              <a class="main-nav__link title title--white" href="catalog.html">Фото и видео</a>
             </li>
             <li class="main-nav__item  main-nav__item--current">
-              <a class="main-nav__link" href="form.html">Форма Отзыва</a>
+              <a class="main-nav__link title title--white" href="form.html">Форма Отзыва</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="https://htmlacademy.ru/">HTML ACADEMY</a>
+              <a class="main-nav__link title title--white" href="https://htmlacademy.ru/">HTML ACADEMY</a>
             </li>
           </ul>
         </div>
@@ -41,14 +41,14 @@
       </header>
       <section class="form">
         <div class="form__review">
-          <h2 class="form__review-title">
+          <h2 class="form__review-title title">
             Оставьте свой отзыв
           </h2>
-          <p class="form__review-description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+          <p class="form__review-description description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </div>
         <form class="form__field field" action="https://echo.htmlacademy.ru/" method="post">
           <fieldset class="field__group">
-            <legend class="field__title">Представьтесь:</legend>
+            <legend class="field__title title">Представьтесь:</legend>
             <ul class="field__list">
               <li class="field__item field-input">
                 <label class="field-input__label" for="user-name">Имя*:</label>
@@ -65,7 +65,7 @@
             </ul>
           </fieldset>
           <fieldset class="field__group">
-            <legend class="field__title">Контактная информация:</legend>
+            <legend class="field__title title">Контактная информация:</legend>
             <ul class="field__list">
               <li class="field__item field__item--phone field-input">
                 <label class="field-input__label" for="user-phone">Контактный телефон*:</label>
@@ -78,7 +78,7 @@
             </ul>
           </fieldset>
           <fieldset class="field__group">
-            <legend class="field__title">Ваше общее впечатление:</legend>
+            <legend class="field__title title">Ваше общее впечатление:</legend>
             <ul class="field__list">
               <li class="field__item radio">
                 <input class="radio__input" id="positive" type="radio" name="impression" value="positive" checked>
@@ -95,7 +95,7 @@
             </ul>
           </fieldset>
           <fieldset class="field__group">
-            <legend class="field__title">Посещенные достопримечательности:</legend>
+            <legend class="field__title title">Посещенные достопримечательности:</legend>
             <ul class="field__list">
               <li class="field__item checkbox">
                 <input class="checkbox__input" id="bridge" type="checkbox" name="bridge" checked>
@@ -116,21 +116,21 @@
             </ul>
           </fieldset>
           <fieldset class="field__group">
-            <legend class="field__title">
+            <legend class="field__title title">
               Опишите свои эмоции:
             </legend>
             <label class="field__label">
               <textarea class="field__textarea" name="emotion" rows="4" placeholder="Опишите подробно все свои восторги"></textarea>
             </label>
           </fieldset>
-          <button class="form__button">Отправить отзыв</button>
+          <button class="form__button title title--white title--link">Отправить отзыв</button>
           <span class="form__necessarily">* — обязательные поля</span>
         </form>
       </section>
     </main>
     <footer class="main-footer">
       <div class="main-footer__wrapper">
-        <p class="main-footer__hashtag">#visitsedona</p>
+        <p class="main-footer__hashtag title">#visitsedona</p>
         <ul class="main-footer__social social">
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
@@ -149,7 +149,7 @@
           </li>
         </ul>
         <div class="main-footer__copyright copyright">
-          <p class="copyright__radio">Разработано</p>
+          <p class="copyright__text description">Разработано</p>
           <a class="copyright__link" href="https://htmlacademy.ru">
             <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="29" height="35" fill="none" viewBox="0 0 29 35"><path fill="#000" d="M14.65.45h-.1l-13.5 1.4v24.7l13.5 8 13.4-8V1.85L14.65.45Zm11.4 12.1-11.5-6.8v-.1h-.1l-.1-.1v.1l-11.4 6.9v-9l11.5-1.2 11.6 1.2v9Zm-11.6-5.3 11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1-11.4-6.7 11.4-6.8Zm-11.5 8.3 11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9-11.5-6.8v-9.9Z"/></svg>
             <span class="visually-hidden">HTML Academy</span>
@@ -161,7 +161,7 @@
       <div class="modal-form">
         <h2 class="modal-form__title">Что-то пошло не так!</h2>
         <p class="modal-form__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-        <a class="modal-form__link" href="form.html">Oк</a>
+        <a class="modal-form__link title title--white title--link" href="form.html">Oк</a>
       </div>
     </div>
 
@@ -169,7 +169,7 @@
       <div class="modal-form">
         <h2 class="modal-form__title">Ваш отзыв отправлен!</h2>
         <p class="modal-form__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы опубликуем его на сайте.</p>
-        <a class="modal-form__link" href="form.html">Закрыть окно</a>
+        <a class="modal-form__link title title--white title--link" href="form.html">Закрыть окно</a>
       </div>
     </div>
   </body>
