@@ -1,0 +1,14 @@
+@use "../base/variables.scss" as *;
+
+.page {
+  display: flex;
+  flex-direction: column;
+  background-color: $white;
+}
+
+@media (min-width: $desktop-width) {
+  .page {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}

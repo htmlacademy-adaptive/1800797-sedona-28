@@ -22,3 +22,24 @@
   text-transform: none;
   text-align: start;
 }
+
+.title--nav {
+  color: $white;
+}
+
+.title--nav-current {
+  color: $white;
+}
+
+@media (min-width: $tablet-width) {
+  .title--nav {
+    color: $black;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .title--nav {
+    color: $black;
+  }
+}
