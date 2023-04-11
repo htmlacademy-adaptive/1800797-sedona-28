@@ -1,9 +1,9 @@
+@use "../base/mixins.scss" as *;
+
 .field__group {
   margin-bottom: 50px;
 }
 
 .field__list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+  @include list-reset;
 }
