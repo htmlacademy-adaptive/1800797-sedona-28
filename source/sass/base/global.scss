@@ -9,3 +9,9 @@ body {
   text-transform: uppercase;
   text-decoration: none;
 }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
