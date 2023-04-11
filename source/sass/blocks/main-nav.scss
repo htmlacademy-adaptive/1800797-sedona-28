@@ -1,8 +1,7 @@
-@use "./variables.scss" as *;
+@use "../base/variables.scss" as *;
+@use "../base/mixins.scss" as *;
 
 .main-nav__list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+  @include list-reset;
   background-color: $blue;
 }

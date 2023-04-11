@@ -1,9 +1,9 @@
+@use "../base/mixins.scss" as *;
+
 .presentation__list {
-  margin: 0;
+  @include list-reset;
   margin-left: 20px;
   margin-right: 20px;
-  padding: 0;
-  list-style-type: none;
 }
 
 .presentation__item {
