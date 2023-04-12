@@ -1,7 +1,35 @@
+@use "../base/variables.scss" as *;
+@use "../base/mixins.scss" as *;
+
+
 .main-footer__hashtag {
   margin-bottom: 30px;
 }
 
 .main-footer__social {
   margin-bottom: 30px;
+}
+
+
+.main-footer__wrapper {
+  width: 156px;
+  height: 235px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+
+@media (min-width: $tablet-width) {
+  .main-footer__wrapper {
+    flex-direction: row;
+    width: 648px;
+    height: 120px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-footer__wrapper {
+    width: 960px;
+  }
 }

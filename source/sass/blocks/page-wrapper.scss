@@ -4,7 +4,16 @@
   display: flex;
   flex-direction: column;
   background-color: $white;
+  width: 320px;
 }
+
+
+@media (min-width: $tablet-width) {
+  .page {
+    width: 768px;
+  }
+}
+
 
 @media (min-width: $desktop-width) {
   .page {
