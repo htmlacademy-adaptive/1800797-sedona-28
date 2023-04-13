@@ -25,7 +25,10 @@
 }
 
 .advantages__preview {
-  height: 221px;
+  min-height: 157px;
+  width: 284px;
+  margin: 0 auto;
+  margin-bottom: 32px;
 }
 
 .advantages__title-preview {
@@ -37,16 +40,18 @@
 }
 
 .advantages__listing {
-  height: 190px;
+  min-height: 190px;
 }
 
 .advantages__item {
-  height: 118px;
+  min-height: 118px;
 }
 
 @media (min-width: $tablet-width) {
   .advantages__preview {
-    height: 206px;
+    min-height: 103px;
+    width: 520px;
+    margin-bottom: 55px;
   }
 
   .advantages__wrapper {
@@ -54,7 +59,7 @@
   }
 
   .advantages__listing {
-    height: 256px;
+    min-height: 256px;
     width: 256px;
   }
 
@@ -65,12 +70,17 @@
   }
 
   .advantages__item {
-    height: 256px;
+    min-height: 256px;
     width: 256px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .advantages__preview {
+    width: 484px;
+    margin-bottom: 44px;
+  }
+
   .advantages__list {
     width: 1200px;
   }

@@ -1,0 +1,15 @@
+@use "../base/mixins.scss" as *;
+@use "../base/variables.scss" as *;
+
+.video__preview {
+  width: 266px;
+  margin: 0 auto;
+  min-height: 116px;
+}
+
+@media (min-width: $tablet-width) {
+  .video__preview {
+    width: 445px;
+    min-height: 121px;
+   }
+}

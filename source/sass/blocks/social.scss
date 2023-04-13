@@ -3,6 +3,10 @@
 
 .social {
   @include list-reset;
+  display: flex;
+  width: 156px;
+  outline: 3px solid rgba(255, 0, 0, 0.8);
+  outline-offset: -3px;
 }
 
 .social-link {

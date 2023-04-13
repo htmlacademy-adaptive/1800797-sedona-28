@@ -6,7 +6,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 389px;
+  min-height: 389px;
 }
 
 .hero__image {
@@ -16,8 +16,8 @@
 
 @media (min-width: $tablet-width) {
   .hero__wrapper {
-    height: 518px;
-    background-image: url("/source/img/index-tablet/hero-index-tablet.jpg");
+    min-height: 518px;
+    background-image: url("../img/index-tablet/hero-index-tablet.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

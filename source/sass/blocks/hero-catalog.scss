@@ -1,7 +1,22 @@
+@use "../base/mixins.scss" as *;
+@use "../base/variables.scss" as *;
+
 .hero-catalog__wrapper {
   background-color: #6999c1;
   background-image: url("../img/catalog-mobile/hero-catalog.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  min-height: 158px;
+}
+
+.hero-catalog__image {
+  display: block;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .hero-catalog__wrapper {
+    min-height: 290px;
+  }
 }

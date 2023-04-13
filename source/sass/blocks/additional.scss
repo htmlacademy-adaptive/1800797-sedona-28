@@ -9,7 +9,7 @@
 }
 
 .additional__item {
-  height: 113px;
+  min-height: 113px;
 }
 
 @media (min-width: $tablet-width) {
@@ -19,7 +19,7 @@
   }
 
   .additional__item {
-    height: 331px;
+    min-height: 331px;
     width: 256px;
   }
 }

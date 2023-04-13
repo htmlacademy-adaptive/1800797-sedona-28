@@ -5,18 +5,18 @@
 .interest {
   margin: 0 auto;
   width: 284px;
-  height: 287px;
+  min-height: 287px;
 }
 
 @media (min-width: $tablet-width) {
   .interest {
     width: 458px;
-    height: 318px;
+    min-height: 318px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .interest {
-    height: 331px;
+    min-height: 331px;
   }
 }
