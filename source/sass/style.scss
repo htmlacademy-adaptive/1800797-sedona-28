@@ -1,6 +1,10 @@
 @use "./blocks/fonts.scss";
-@use "./blocks/global.scss";
+@use "./base/global.scss";
+@use "./blocks/page-wrapper.scss";
 @use "./blocks/advantages.scss";
+@use "./blocks/additional.scss";
+@use "./blocks/interest.scss";
+@use "./blocks/main-header.scss";
 @use "./blocks/description.scss";
 @use "./blocks/field.scss";
 @use "./blocks/form.scss";
@@ -12,4 +16,6 @@
 @use "./blocks/presentaton.scss";
 @use "./blocks/social.scss";
 @use "./blocks/title.scss";
+@use "./blocks/video.scss";
+@use "./blocks/modal-form.scss";
 @use "./blocks/visually-hidden";

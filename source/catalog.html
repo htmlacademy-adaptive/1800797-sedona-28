@@ -2,10 +2,12 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+    <div class="page-wrapper">
     <header class="main-header">
       <a class="main-header__logo" href="index.html">
         <img class="main-header__logo-img" src="img/logo-sedona.svg" width="185" height="96" alt="Логотип Седоны.">
@@ -17,16 +19,16 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__link title title--bright" href="index.html">Главная</a>
+              <a class="main-nav__link title title--nav" href="index.html">Главная</a>
             </li>
             <li class="main-nav__item  main-nav__item--current">
-              <a class="main-nav__link title title--bright" href="catalog.html">Фото и видео</a>
+              <a class="main-nav__link title title--nav" href="catalog.html">Фото и видео</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link title title--bright" href="form.html">Форма Отзыва</a>
+              <a class="main-nav__link title title--nav" href="form.html">Форма Отзыва</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link title title--bright" href="https://htmlacademy.ru/">Html academy</a>
+              <a class="main-nav__link title title--nav" href="https://htmlacademy.ru/">Html academy</a>
             </li>
           </ul>
         </div>
@@ -40,8 +42,10 @@
         </div>
       </header>
       <section class="main-container__presentation presentation">
-        <h2 class="presentation__title title">Фото и видео</h2>
-        <p class="presentation__description description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+        <div class="presentation__preview">
+          <h2 class="presentation__title title">Фото и видео</h2>
+          <p class="presentation__description description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+        </div>
         <ul class="presentation__list">
           <li class="presentation__item">
             <figure class="presentation__photo">
@@ -94,9 +98,13 @@
         </ul>
         <div class="presentation__video video">
           <div class="video__intro">
-            <h3 class="video__title title">Все еще сомневаетесь?</h3>
-            <p class="video__description description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-            <video class="video__player" controls poster="img/catalog-mobile/video-image.jpg"></video>
+            <div class="video__preview">
+              <h3 class="video__title title">Все еще сомневаетесь?</h3>
+              <p class="video__description description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+            </div>
+            <img class="video__player" src="img/catalog-mobile/video-image.jpg" width="280" height="177" alt="Видепрезентация Седоны.">
+            <button class="video__start">
+              <span class="visually-hidden">Включение видео</span>
           </div>
         </div>
       </section>
@@ -130,5 +138,6 @@
         </div>
       </div>
     </footer>
+  </div>
   </body>
 </html>

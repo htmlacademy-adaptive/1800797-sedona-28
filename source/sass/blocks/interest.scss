@@ -1,0 +1,22 @@
+@use "../base/variables.scss" as *;
+@use "../base/mixins.scss" as *;
+
+
+.interest {
+  margin: 0 auto;
+  width: 284px;
+  min-height: 287px;
+}
+
+@media (min-width: $tablet-width) {
+  .interest {
+    width: 458px;
+    min-height: 318px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .interest {
+    min-height: 331px;
+  }
+}

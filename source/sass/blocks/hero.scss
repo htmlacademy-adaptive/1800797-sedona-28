@@ -1,7 +1,25 @@
+@use "../base/variables.scss" as *;
+
 .hero__wrapper {
   background-color: #6999c1;
   background-image: url("../img/index-mobile/hero-index.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  min-height: 389px;
+}
+
+.hero__image {
+  display: block;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .hero__wrapper {
+    min-height: 518px;
+    background-image: url("../img/index-tablet/hero-index-tablet.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
 }

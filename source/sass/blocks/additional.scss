@@ -1,0 +1,35 @@
+@use "../base/variables.scss" as *;
+@use "../base/mixins.scss" as *;
+
+.additional {
+  display: flex;
+  flex-direction: column;
+  width: 284px;
+  margin: 0 auto;
+}
+
+.additional__item {
+  min-height: 113px;
+}
+
+@media (min-width: $tablet-width) {
+  .additional {
+    flex-direction: row;
+    width: 768px;
+  }
+
+  .additional__item {
+    min-height: 331px;
+    width: 256px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additional {
+    width: 1200px;
+  }
+
+  .additional__item {
+    width: 400px;
+  }
+}

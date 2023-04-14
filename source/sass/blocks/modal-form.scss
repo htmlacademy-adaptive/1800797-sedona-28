@@ -1,0 +1,24 @@
+@use "../base/mixins.scss" as *;
+@use "../base/variables.scss" as *;
+
+.modal-form__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 280px;
+}
+
+.modal-form__container-review {
+  min-height: 323px;
+}
+
+@media (min-width: $tablet-width) {
+  .modal-form__container {
+    min-height: 347px;
+    width: 400px;
+  }
+
+  .modal-form__container-review {
+    width: 640px;
+  }
+}

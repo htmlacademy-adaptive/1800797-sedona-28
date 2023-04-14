@@ -1,3 +1,28 @@
+@use "../base/mixins.scss" as *;
+@use "../base/variables.scss" as *;
+
+.form__review {
+  width: 280px;
+  min-height: 134px;
+  margin: 0 auto;
+}
+
 .form__field {
   margin-bottom: 22px;
+}
+
+@media (min-width: $tablet-width) {
+  .form__review {
+    min-height: 88px;
+    width: 436px;
+    margin-bottom: 108px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form__review {
+    min-height: 99px;
+    width: 436px;
+    margin-bottom: 68px;
+  }
 }
