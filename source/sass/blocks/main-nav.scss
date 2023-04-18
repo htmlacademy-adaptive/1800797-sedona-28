@@ -3,7 +3,7 @@
 
 .main-nav {
   display: flex;
-  position: relative;
+  position: absolute;
 }
 
 .main-nav__toggle {
@@ -86,11 +86,40 @@
   width: 320px;
 }
 
-.main-nav__item {
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
-  border-bottom: 1px solid rgba(1, 1, 1, 0.2);
-  padding-top: 17px;
-  padding-bottom: 12px;
+@media (max-width: $mobile-width-only) {
+  .main-nav--closed .main-nav__item {
+    display: none;
+  }
+
+  .main-nav__item {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(1, 1, 1, 0.2);
+    padding: 17px 70px 12px 70px;
+  }
+
+  .main-nav__item--shadow {
+    border-bottom: 0;
+  }
+
+  .main-nav__item--shadow::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    height: 7px;
+    width: 100%;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+  }
+
+  /* .main-nav--opened .main-nav__item {
+    display: none;
+  }
+
+  .main-nav--opened .main-nav__toggle {
+    display: none;
+  }
+  */
 }
 
 @media (min-width: $tablet-width) {
