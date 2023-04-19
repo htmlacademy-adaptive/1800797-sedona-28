@@ -221,6 +221,12 @@ img {
     z-index: 2;
   }
 }
+@media (min-width: 1200px) {
+  .main-header__logo {
+    right: 42%;
+    z-index: 2;
+  }
+}
 .description {
   font-weight: 400;
   font-size: 14px;
@@ -582,23 +588,38 @@ img {
   .main-nav__list {
     background-color: #ffffff;
     display: flex;
+    align-items: center;
+    flex-wrap: wrap;
     text-align: center;
     width: 100%;
     margin: 0 auto;
   }
 
-  .main-nav__item {
-    width: 153px;
-    padding-top: 18px;
-    padding-bottom: 17px;
+  .main-nav__item:nth-child(4n-1) {
+    margin-left: 153px;
   }
 
-  .main-nav__item-third {
-    margin-left: 153px;
+  .main-nav__item {
+    width: 153px;
   }
 
   .main-nav__toggle {
     display: none;
+  }
+
+  .main-nav__link {
+    display: block;
+    padding-top: 18px;
+    padding-bottom: 17px;
+  }
+}
+@media (min-width: 1200px) {
+  .main-nav__item {
+    width: 240px;
+  }
+
+  .main-nav__item:nth-child(4n-1) {
+    margin-left: 240px;
   }
 }
 .presentation__preview {
@@ -712,6 +733,10 @@ img {
   .main-nav__item .title {
     font-size: 14px;
     line-height: 21px;
+  }
+
+  .main-nav__item--current .title {
+    color: #766357;
   }
 }
 @media (min-width: 1200px) {
