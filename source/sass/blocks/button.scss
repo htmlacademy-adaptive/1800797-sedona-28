@@ -1,0 +1,14 @@
+@use "../base/variables.scss" as *;
+@use "../base/mixins.scss" as *;
+
+.button {
+  display: block;
+  background-color: $blue;
+  color: $white;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}

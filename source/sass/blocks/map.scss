@@ -1,0 +1,13 @@
+@use "../base/variables.scss" as *;
+@use "../base/mixins.scss" as *;
+
+.map__frame {
+  display: block;
+  border: none;
+}
+
+@media (min-width: $tablet-width) {
+  .map__frame {
+    width: 100%;
+  }
+}

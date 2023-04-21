@@ -4,7 +4,6 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  text-align: center;
   text-transform: uppercase;
   text-decoration: none;
   color: $black;
@@ -12,10 +11,6 @@
 
 .title--bright {
   color: $white;
-}
-
-.title--link {
-  background-color: $blue;
 }
 
 .title--lowercase {
@@ -32,17 +27,20 @@
 }
 
 @media (min-width: $tablet-width) {
-  .title--nav {
-    color: $black;
+  .title {
+    font-size: 21px;
   }
 
-  .main-nav__item .title {
+  .title--nav {
+    color: $black;
     font-size: 14px;
     line-height: 21px;
   }
 
-  .main-nav__item--current .title {
+  .title--nav-current {
     color: #766357;
+    font-size: 14px;
+    line-height: 21px;
   }
 }
 

@@ -1,5 +1,9 @@
 @use "../base/variables.scss" as *;
 
+.hero {
+  position: relative;
+}
+
 .hero__wrapper {
   background-color: #6999c1;
   background-image: url("../img/index-mobile/hero-index.jpg");
@@ -7,6 +11,34 @@
   background-position: center;
   background-size: cover;
   min-height: 389px;
+  padding-top: 90px;
+  padding-bottom: 85px;
+}
+
+.hero__wrapper::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/index-mobile/vector-left.svg");
+  background-repeat: no-repeat;
+  background-position: left;
+  width: 160px;
+  height: 57px;
+  z-index: 4;
+  bottom: 0;
+  left: 0;
+}
+
+.hero__wrapper::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/index-mobile/vector-right.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  width: 160px;
+  height: 57px;
+  z-index: 4;
+  bottom: 0;
+  right: 0;
 }
 
 .hero__image {
@@ -21,5 +53,14 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    padding-top: 77px;
+    padding-bottom: 91px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .hero__wrapper {
+    padding-top: 78px;
+    padding-bottom: 90px;
   }
 }

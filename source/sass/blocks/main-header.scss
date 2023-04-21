@@ -11,18 +11,18 @@
   position: absolute;
   top: 0;
   right: 67px;
+  z-index: 2;
 }
 
 @media (min-width: $tablet-width) {
   .main-header__logo {
     right: 38%;
-    z-index: 2;
+    z-index: 4;
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-header__logo {
     right: 42%;
-    z-index: 2;
   }
 }

@@ -5,31 +5,103 @@
   display: flex;
   flex-direction: column;
   width: 284px;
-  margin: 0 auto;
+  margin: 0 auto 11px;
+  padding-top: 31px;
 }
 
 .additional__item {
   min-height: 113px;
+  position: relative;
+}
+
+.additional__item--housing::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/index-mobile/icon-house.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 39px;
+  height: 37px;
+  left: 0;
+  top: 0;
+}
+
+.additional__item--food::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/index-mobile/icon-burger.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 39px;
+  left: 0;
+  top: 0;
+}
+
+.additional__item--souvenir::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/index-mobile/icon-gift.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 32px;
+  height: 38px;
+  left: 0;
+  top: 0;
+}
+
+.additional__title {
+  margin: 0;
+  padding: 0;
+  margin-left: 47px;
+  margin-bottom: 16px;
+  width: 150px;
+}
+
+.additional__description {
+  margin: 0;
+  padding: 0;
+  margin-left: 47px;
+  margin-bottom: 33px;
+  width: 232px;
 }
 
 @media (min-width: $tablet-width) {
   .additional {
     flex-direction: row;
     width: 768px;
+    padding-top: 158px;
+    padding-bottom: 61px;
   }
 
   .additional__item {
-    min-height: 331px;
     width: 256px;
+  }
+
+  .additional__title {
+    @include text-reset;
+    margin-bottom: 16px;
+  }
+
+  .additional__description {
+    @include text-reset;
+    width: 170px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .additional {
     width: 1200px;
+    padding-top: 169px;
+    padding-bottom: 69px;
   }
 
   .additional__item {
     width: 400px;
+  }
+
+  .additional__description {
+    @include text-reset;
+    width: 282px;
   }
 }
