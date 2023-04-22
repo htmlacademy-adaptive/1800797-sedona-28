@@ -2,13 +2,44 @@
 @use "../base/mixins.scss" as *;
 
 .social {
-  @include list-reset;
   display: flex;
   width: 156px;
-  outline: 3px solid rgba(255, 0, 0, 0.8);
-  outline-offset: -3px;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-.social-link {
+.social__link {
+  display: block;
+}
+
+.social__item {
   background-color: $blue;
+  padding: 14px 12px;
+}
+
+.social__link--vkontakte {
+  background-image: url("../img/index-mobile/vk.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% auto;
+  width: 24px;
+  height: 24px;
+
+}
+
+.social__link--telegram {
+  background-image: url("../img/index-mobile/tg.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+}
+
+.social__link--youtube {
+  background-image: url("../img/index-mobile/youtube.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 24px;
+  height: 24px;
 }

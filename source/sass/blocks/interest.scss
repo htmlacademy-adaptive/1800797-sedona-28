@@ -4,19 +4,44 @@
 
 .interest {
   margin: 0 auto;
+  padding-top: 38px;
+  padding-bottom: 49px;
   width: 284px;
   min-height: 287px;
+}
+
+.interest__title {
+  @include text-reset;
+  margin-bottom: 32px;
+}
+
+.interest__description {
+  @include text-reset;
+  margin-bottom: 32px;
+  width: 262px;
 }
 
 @media (min-width: $tablet-width) {
   .interest {
     width: 458px;
     min-height: 318px;
+    padding-top: 60px;
+    padding-bottom: 55px;
+  }
+
+  .interest__title {
+    margin-bottom: 44px;
+  }
+
+  .interest__description {
+    margin-bottom: 44px;
+    width: 396px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .interest {
     min-height: 331px;
+    padding-bottom: 67px;
   }
 }
