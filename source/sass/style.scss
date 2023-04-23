@@ -1,4 +1,4 @@
-@use "./blocks/fonts.scss";
+@use "./base/fonts.scss";
 @use "./base/global.scss";
 @use "./blocks/page-wrapper.scss";
 @use "./blocks/advantages.scss";
@@ -18,7 +18,6 @@
 @use "./blocks/title.scss";
 @use "./blocks/video.scss";
 @use "./blocks/modal-form.scss";
-@use "./blocks/visually-hidden";
 @use "./blocks/map.scss";
 @use "./blocks/button.scss";
 @use "./blocks/copyrigth.scss";

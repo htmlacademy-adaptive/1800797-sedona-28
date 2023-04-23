@@ -15,30 +15,32 @@
   padding-bottom: 85px;
 }
 
-.hero__wrapper::before {
-  content: "";
-  position: absolute;
-  background-image: url("../img/index-mobile/vector-left.svg");
-  background-repeat: no-repeat;
-  background-position: left;
-  width: 160px;
-  height: 57px;
-  z-index: 4;
-  bottom: 0;
-  left: 0;
-}
+@media (max-width: $mobile-width-only) {
+  .hero__wrapper::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/index-mobile/vector-left.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+    width: 160px;
+    height: 57px;
+    z-index: 4;
+    bottom: 0;
+    left: 0;
+  }
 
-.hero__wrapper::after {
-  content: "";
-  position: absolute;
-  background-image: url("../img/index-mobile/vector-right.svg");
-  background-repeat: no-repeat;
-  background-position: right;
-  width: 160px;
-  height: 57px;
-  z-index: 4;
-  bottom: 0;
-  right: 0;
+  .hero__wrapper::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/index-mobile/vector-right.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    width: 160px;
+    height: 57px;
+    z-index: 4;
+    bottom: 0;
+    right: 0;
+  }
 }
 
 .hero__image {
@@ -56,11 +58,37 @@
     padding-top: 77px;
     padding-bottom: 91px;
   }
+
+  .hero__wrapper::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/index-tablet/vector_bottom_tablet.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    width: 768px;
+    height: 57px;
+    z-index: 4;
+    bottom: 0;
+    left: 0;
+  }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
   .hero__wrapper {
     padding-top: 78px;
     padding-bottom: 90px;
+  }
+
+  .hero__wrapper::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/index-desktop/bottom-line-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    width: 1200px;
+    height: 57px;
+    z-index: 4;
+    bottom: 0;
+    left: 0;
   }
 }
