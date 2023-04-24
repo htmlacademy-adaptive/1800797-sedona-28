@@ -1,6 +1,10 @@
 @use "../base/variables.scss" as *;
 @use "../base/mixins.scss" as *;
 
+.map {
+  min-height: 350px;
+}
+
 .map__frame {
   display: block;
   border: none;

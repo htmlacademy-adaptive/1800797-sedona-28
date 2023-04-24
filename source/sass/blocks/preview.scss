@@ -1,0 +1,42 @@
+@use "../base/mixins.scss" as *;
+@use "../base/variables.scss" as *;
+
+.preview__title-index {
+  margin: 0 auto 35px;
+  text-align: center;
+  width: 260px;
+}
+
+.preview__description-index {
+  @include text-reset;
+}
+
+.preview__title-catalog {
+  margin: 0 auto 35px;
+  text-align: center;
+  width: 260px;
+}
+
+.preview__description-catalog {
+  @include text-reset;
+}
+
+@media (min-width: $tablet-width) {
+  .preview__title-index {
+    width: 520px;
+  }
+
+  .preview__title-catalog {
+    width: 445px;
+  }
+
+  .preview__description-catalog {
+    width: 445px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .preview__title-index {
+    width: 484px;
+  }
+}

@@ -5,7 +5,8 @@
   min-height: 141px;
   width: 284px;
   margin: 0 auto;
-  margin-bottom: 42px;
+  margin-bottom: 45px;
+  padding-top: 30px;
 }
 
 .presentation__list {
@@ -32,8 +33,9 @@
 @media (min-width: $tablet-width) {
   .presentation__preview {
     min-height: 114px;
-    width: 458px;
+    width: 445px;
     margin-bottom: 67px;
+    padding-top: 61px;
   }
 
   .presentation__list {
@@ -50,8 +52,8 @@
 @media (min-width: $desktop-width) {
   .presentation__preview {
     min-height: 122px;
-    width: 458px;
     margin-bottom: 65px;
+    padding-top: 100px;
   }
 
   .presentation__list {
