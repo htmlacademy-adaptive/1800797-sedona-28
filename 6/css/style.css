@@ -42,6 +42,17 @@ img {
     background-color: #e7e5e5;
   }
 }
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
 .page-wrapper {
   display: flex;
   flex-direction: column;
@@ -159,6 +170,14 @@ img {
     width: calc(100% - 36px);
     left: 18px;
   }
+
+  .advantages__brake-tablet {
+    display: none;
+  }
+
+  .advantages__brake-desktop {
+    display: none;
+  }
 }
 @media (min-width: 768px) {
   .advantages__preview {
@@ -213,6 +232,10 @@ img {
     padding-top: 41px;
     padding-bottom: 41px;
   }
+
+  .advantages__brake-desktop {
+    display: none;
+  }
 }
 @media (min-width: 1200px) {
   .advantages__preview {
@@ -240,11 +263,15 @@ img {
   }
 
   .advantages__description {
-    width: 230px;
+    width: 262px;
   }
 
   .advantages__description-list {
     width: 284px;
+  }
+
+  .advantages__brake-desktop {
+    display: inline;
   }
 }
 .additional {
@@ -312,6 +339,11 @@ img {
   width: 232px;
 }
 
+@media (max-width: 767px) {
+  .additional__brake-desktop {
+    display: none;
+  }
+}
 @media (min-width: 768px) {
   .additional {
     flex-direction: row;
@@ -322,6 +354,42 @@ img {
 
   .additional__item {
     width: 256px;
+  }
+
+  .additional__item--housing::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/index-tablet/icon-house.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 77px;
+    height: 72px;
+    left: 88px;
+    top: -100px;
+  }
+
+  .additional__item--food::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/index-tablet/icon-burger.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 68px;
+    left: 88px;
+    top: -100px;
+  }
+
+  .additional__item--souvenir::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/index-tablet/icon-gift.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 67px;
+    height: 75px;
+    left: 88px;
+    top: -100px;
   }
 
   .additional__title {
@@ -347,6 +415,42 @@ img {
 
   .additional__item {
     width: 400px;
+  }
+
+  .additional__item--housing::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/index-desktop/icon-house-desktop.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 73px;
+    left: 160px;
+    top: -100px;
+  }
+
+  .additional__item--food::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/index-desktop/icon-burger-desktop.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 73px;
+    height: 69px;
+    left: 160px;
+    top: -100px;
+  }
+
+  .additional__item--souvenir::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/index-desktop/icon-gift-desktop.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 78px;
+    height: 75px;
+    left: 160px;
+    top: -100px;
   }
 
   .additional__description {
@@ -385,6 +489,11 @@ img {
   padding-bottom: 16px;
 }
 
+@media (max-width: 767px) {
+  .interest__brake-tablet {
+    display: none;
+  }
+}
 @media (min-width: 768px) {
   .interest {
     width: 458px;
@@ -399,7 +508,7 @@ img {
 
   .interest__description {
     margin-bottom: 44px;
-    width: 396px;
+    width: 435px;
   }
 }
 @media (min-width: 1200px) {
@@ -609,32 +718,33 @@ img {
   padding-bottom: 85px;
 }
 
-.hero__wrapper::before {
-  content: "";
-  position: absolute;
-  background-image: url("../img/index-mobile/vector-left.svg");
-  background-repeat: no-repeat;
-  background-position: left;
-  width: 160px;
-  height: 57px;
-  z-index: 4;
-  bottom: 0;
-  left: 0;
-}
+@media (max-width: 767px) {
+  .hero__wrapper::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/index-mobile/vector-left.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+    width: 160px;
+    height: 57px;
+    z-index: 4;
+    bottom: 0;
+    left: 0;
+  }
 
-.hero__wrapper::after {
-  content: "";
-  position: absolute;
-  background-image: url("../img/index-mobile/vector-right.svg");
-  background-repeat: no-repeat;
-  background-position: right;
-  width: 160px;
-  height: 57px;
-  z-index: 4;
-  bottom: 0;
-  right: 0;
+  .hero__wrapper::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/index-mobile/vector-right.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    width: 160px;
+    height: 57px;
+    z-index: 4;
+    bottom: 0;
+    right: 0;
+  }
 }
-
 .hero__image {
   display: block;
   margin: 0 auto;
@@ -650,11 +760,37 @@ img {
     padding-top: 77px;
     padding-bottom: 91px;
   }
+
+  .hero__wrapper::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/index-tablet/vector_bottom_tablet.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    width: 768px;
+    height: 57px;
+    z-index: 4;
+    bottom: 0;
+    left: 0;
+  }
 }
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .hero__wrapper {
     padding-top: 78px;
     padding-bottom: 90px;
+  }
+
+  .hero__wrapper::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/index-desktop/bottom-line-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    width: 1200px;
+    height: 57px;
+    z-index: 4;
+    bottom: 0;
+    left: 0;
   }
 }
 .main-container__hero-catalog {
@@ -724,7 +860,7 @@ img {
 
   .main-footer__social {
     margin: 0;
-    margin-left: 270px;
+    margin-left: 250px;
   }
 }
 .main-nav {
@@ -1074,17 +1210,6 @@ img {
     width: 640px;
   }
 }
-.visually-hidden {
-  position: absolute;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-}
-
 .map__frame {
   display: block;
   border: none;
