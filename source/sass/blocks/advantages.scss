@@ -85,6 +85,14 @@
     width: calc(100% - 36px);
     left: 18px;
   }
+
+  .advantages__brake-tablet {
+    display: none;
+  }
+
+  .advantages__brake-desktop {
+    display: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -140,6 +148,10 @@
     padding-top: 41px;
     padding-bottom: 41px;
   }
+
+  .advantages__brake-desktop {
+    display: none;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -168,10 +180,14 @@
   }
 
   .advantages__description {
-    width: 230px;
+    width: 262px;
   }
 
   .advantages__description-list {
     width: 284px;
+  }
+
+  .advantages__brake-desktop {
+    display: inline;
   }
 }

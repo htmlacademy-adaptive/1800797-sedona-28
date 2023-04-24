@@ -27,6 +27,12 @@
   padding-bottom: 16px;
 }
 
+@media (max-width: $mobile-width-only) {
+  .interest__brake-tablet {
+    display: none;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .interest {
     width: 458px;
@@ -41,7 +47,7 @@
 
   .interest__description {
     margin-bottom: 44px;
-    width: 396px;
+    width: 435px;
   }
 }
 

@@ -66,6 +66,12 @@
   width: 232px;
 }
 
+@media (max-width: $mobile-width-only) {
+  .additional__brake-desktop {
+    display: none;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .additional {
     flex-direction: row;
