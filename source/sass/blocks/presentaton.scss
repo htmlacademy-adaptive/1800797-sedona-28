@@ -3,26 +3,18 @@
 
 .presentation__preview {
   min-height: 141px;
-  width: 284px;
+  width: 280px;
   margin: 0 auto;
   margin-bottom: 45px;
   padding-top: 30px;
 }
 
-.presentation__list {
-  @include list-reset;
-  width: 280px;
+.presentation__photo-day {
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
 }
 
-.presentation__item {
-  margin-bottom: 25px;
-}
-
-.presentation__photo {
-  margin: 0;
+.presentation__list {
+  margin: 0 auto;
   padding: 0;
 }
 
@@ -31,21 +23,16 @@
 }
 
 @media (min-width: $tablet-width) {
+  .presentation {
+    width: 648px;
+    margin: 0 auto;
+  }
+
   .presentation__preview {
     min-height: 114px;
     width: 445px;
     margin-bottom: 67px;
     padding-top: 61px;
-  }
-
-  .presentation__list {
-    width: 648px;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .presentation__item {
-    width: 324px;
   }
 }
 
@@ -54,9 +41,5 @@
     min-height: 122px;
     margin-bottom: 65px;
     padding-top: 100px;
-  }
-
-  .presentation__list {
-    width: 1200px;
   }
 }

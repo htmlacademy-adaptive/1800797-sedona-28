@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
-    <div class="page-wrapper">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="page-wrapper">
     <header class="main-header">
       <a class="main-header__logo" href="index.html">
         <img class="main-header__logo-img" src="img/logo-sedona.svg" width="185" height="96" alt="Логотип Седоны.">
@@ -38,71 +40,63 @@
       <header class="main-container__hero-catalog hero-catalog">
         <h1 class="visually-hidden">Фото и видео Седоны.</h1>
         <div class="hero-catalog__wrapper">
-          <img class="hero-catalog__image" src="img/catalog-mobile/sedona-catalog.svg" width="229" height="39" alt="Приветсвенная надпись Седона.">
+          <img class="hero-catalog__image" src="img/catalog-mobile/sedona-catalog.svg" width="229" height="39"
+            alt="Приветсвенная надпись Седона.">
         </div>
       </header>
       <section class="main-container__presentation presentation">
         <div class="presentation__preview preview">
           <h2 class="preview__title-catalog title">Фото и видео</h2>
-          <p class="preview__description-catalog description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+          <p class="preview__description-catalog description">Не можете решиться на путешествие из-за курса? Фотографии
+            помогут вам забыть о политике и экономике.</p>
         </div>
-        <ul class="presentation__list">
-          <li class="presentation__item">
-            <figure class="presentation__photo">
-              <a class="presentation__photo-link">
-                <img class="presentation__photo-image" src="img/catalog-mobile/photo-1-mobile.jpg" width="280" height="280" alt="Дорога в Седону на закате.">
-              </a>
-                <figcaption class="presentation__content">
-                  <h3 class="presentation__photo-title description description--card">Неродные просторы</h3>
-                  <p class="presentation__photo-author description description--author">Автор фото: Борис</p>
-                  <b class="presentation__photo-like presentation__photo-like--count description description--card">1350</b>
-                </figcaption>
-            </figure>
+        <div class="presentation__photo-day photo-day">
+          <a class="photo-day__link" href="#">
+            <img class="photo-day__image" src="img/catalog-mobile/photo-1-mobile.jpg" width="280" height="280"
+              alt="Дорога в Седону на закате.">
+          </a>
+          <h3 class="photo-day__photo-title description description--card">Неродные просторы</h3>
+          <p class="photo-day__photo-author description description--author">Автор фото: Борис</p>
+          <b class="photo-day__photo-like photo-day__photo-like--count description description--card">1350</b>
+        </div>
+        <ul class="presentation__list card">
+          <li class="card__item">
+            <a class="card__photo-link" href="#">
+              <img class="card__photo-image" src="img/catalog-mobile/photo-2-mobile.jpg" width="280" height="280"
+                alt="Фотогравия местной растительности.">
+            </a>
+            <h3 class="card__photo-title description description--card">Местная растительность</h3>
+            <p class="card__photo-author description description--author">Автор фото: Сергей</p>
+            <b class="card__photo-like card__photo-like--count description description--card">143</b>
           </li>
-          <li class="presentation__item">
-            <figure class="presentation__photo">
-              <a class="presentation__photo-link">
-                <img class="presentation__photo-image" src="img/catalog-mobile/photo-2-mobile.jpg" width="280" height="280" alt="Фотогравия местной растительности.">
-              </a>
-                <figcaption class="presentation__content">
-                  <h3 class="presentation__photo-title description description--card">Местная растительность</h3>
-                  <p class="presentation__photo-author description description--author">Автор фото: Сергей</p>
-                  <b class="presentation__photo-like presentation__photo-like--count description description--card">143</b>
-                </figcaption>
-            </figure>
+          <li class="card__item">
+            <a class="card__photo-link" href="#">
+              <img class="card__photo-image" src="img/catalog-mobile/photo-3-mobile.jpg" width="280" height="280"
+                alt="Дорога в Седону серпантин среди зелени.">
+            </a>
+            <h3 class="card__photo-title description description--card">Дорога на север</h3>
+            <p class="card__photo-author description description--author">Автор фото: Петр</p>
+            <b class="card__photo-like  card__photo-like--count description description--card">96</b>
           </li>
-          <li class="presentation__item">
-            <figure class="presentation__photo">
-              <a class="presentation__photo-link">
-                <img class="presentation__photo-image" src="img/catalog-mobile/photo-3-mobile.jpg" width="280" height="280" alt="Дорога в Седону серпантин среди зелени.">
-              </a>
-                <figcaption class="presentation__content">
-                  <h3 class="presentation__photo-title description description--card">Дорога на север</h3>
-                  <p class="presentation__photo-author description description--author">Автор фото: Петр</p>
-                  <b class="presentation__photo-like  presentation__photo-like--count description description--card">96</b>
-                </figcaption>
-            </figure>
-          </li>
-          <li class="presentation__item">
-            <figure class="presentation__photo">
-              <a class="presentation__photo-link">
-                <img class="presentation__photo-image" src="img/catalog-mobile/photo-4-mobile.jpg" width="280" height="280" alt="Мост дьявола.">
-              </a>
-                <figcaption class="presentation__content">
-                  <h3 class="presentation__photo-title description description--card">Мост дьявола</h3>
-                  <p class="presentation__photo-author description description--author">Автор фото: Антон</p>
-                  <b class="presentation__photo-like presentation__photo-like--count description description--card">254</b>
-                </figcaption>
-            </figure>
+          <li class="card__item">
+            <a class="card__photo-link" href="#">
+              <img class="card__photo-image" src="img/catalog-mobile/photo-4-mobile.jpg" width="280" height="280"
+                alt="Мост дьявола.">
+            </a>
+            <h3 class="card__photo-title description description--card">Мост дьявола</h3>
+            <p class="card__photo-author description description--author">Автор фото: Антон</p>
+            <b class="card__photo-like card__photo-like--count description description--card">254</b>
           </li>
         </ul>
         <div class="presentation__video video">
           <div class="video__intro">
             <div class="video__preview">
               <h3 class="video__title title">Все еще сомневаетесь?</h3>
-              <p class="video__description description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+              <p class="video__description description">Смотрите видеопрезентацию и скорее за билетами, пока они не
+                подорожали в очередной раз!</p>
             </div>
-            <img class="video__player" src="img/catalog-mobile/video-image.jpg" width="280" height="177" alt="Видепрезентация Седоны.">
+            <img class="video__player" src="img/catalog-mobile/video-image.jpg" width="280" height="177"
+              alt="Видепрезентация Седоны.">
             <button class="video__start" type="button">
               <span class="visually-hidden">Включение видео</span>
             </button>
@@ -133,7 +127,11 @@
         <div class="main-footer__copyright copyright">
           <p class="copyright__text description">Разработано</p>
           <a class="copyright__link" href="https://htmlacademy.ru">
-            <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="29" height="35" fill="none" viewBox="0 0 29 35"><path fill="#000" d="M14.65.45h-.1l-13.5 1.4v24.7l13.5 8 13.4-8V1.85L14.65.45Zm11.4 12.1-11.5-6.8v-.1h-.1l-.1-.1v.1l-11.4 6.9v-9l11.5-1.2 11.6 1.2v9Zm-11.6-5.3 11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1-11.4-6.7 11.4-6.8Zm-11.5 8.3 11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9-11.5-6.8v-9.9Z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="29" height="35"
+              fill="none" viewBox="0 0 29 35">
+              <path fill="#000"
+                d="M14.65.45h-.1l-13.5 1.4v24.7l13.5 8 13.4-8V1.85L14.65.45Zm11.4 12.1-11.5-6.8v-.1h-.1l-.1-.1v.1l-11.4 6.9v-9l11.5-1.2 11.6 1.2v9Zm-11.6-5.3 11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1-11.4-6.7 11.4-6.8Zm-11.5 8.3 11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9-11.5-6.8v-9.9Z" />
+            </svg>
             <span class="visually-hidden">HTML Academy</span>
           </a>
         </div>
@@ -141,5 +139,5 @@
     </footer>
   </div>
   <script src="./js/script.js"></script>
-  </body>
+</body>
 </html>
