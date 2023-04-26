@@ -441,11 +441,11 @@ img {
   }
 }
 .interest {
-  margin: 0 auto;
-  padding-top: 38px;
-  padding-bottom: 49px;
   width: 284px;
-  min-height: 287px;
+}
+
+.interest--catalog {
+  width: 266px;
 }
 
 .interest__title {
@@ -469,6 +469,22 @@ img {
   padding-bottom: 16px;
 }
 
+.interest__catalog-title {
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  margin-bottom: 38px;
+  width: 260px;
+}
+
+.interest__catalog-description {
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  margin-bottom: 38px;
+  width: 260px;
+}
+
 @media (max-width: 767px) {
   .interest__brake-tablet {
     display: none;
@@ -477,9 +493,10 @@ img {
 @media (min-width: 768px) {
   .interest {
     width: 458px;
-    min-height: 318px;
-    padding-top: 60px;
-    padding-bottom: 55px;
+  }
+
+  .interest--catalog {
+    width: 445px;
   }
 
   .interest__title {
@@ -490,11 +507,20 @@ img {
     margin-bottom: 44px;
     width: 435px;
   }
+
+  .interest__catalog-title {
+    margin-bottom: 38px;
+    width: 300px;
+  }
+
+  .interest__catalog-description {
+    margin-bottom: 80px;
+    width: 445px;
+  }
 }
 @media (min-width: 1200px) {
-  .interest {
-    min-height: 331px;
-    padding-bottom: 67px;
+  .interest__catalog-description {
+    margin-bottom: 75px;
   }
 }
 .main-header {
@@ -880,10 +906,43 @@ img {
     left: 0;
   }
 }
-.main-container__presentation {
-  margin-bottom: 17px;
+.main-container__interest {
+  margin: 0 auto;
+  padding-top: 38px;
+  padding-bottom: 49px;
 }
 
+.main-container__video {
+  margin: 0 auto;
+  padding-top: 17px;
+}
+
+@media (min-width: 768px) {
+  .main-container__presentation {
+    margin: 0 auto;
+    margin-bottom: 58px;
+  }
+
+  .main-container__interest {
+    padding-top: 60px;
+    padding-bottom: 55px;
+  }
+
+  .main-container__video {
+    margin: 0 auto;
+    padding-top: 0;
+    padding-bottom: 40px;
+  }
+}
+@media (min-width: 1200px) {
+  .main-container__presentation {
+    margin-bottom: 62px;
+  }
+
+  .main-container__interest {
+    padding-bottom: 67px;
+  }
+}
 .main-footer__hashtag {
   margin: 0 auto;
   padding: 0;
@@ -1131,7 +1190,6 @@ img {
 @media (min-width: 768px) {
   .presentation {
     width: 648px;
-    margin: 0 auto;
   }
 
   .presentation__preview {
@@ -1142,6 +1200,10 @@ img {
   }
 }
 @media (min-width: 1200px) {
+  .presentation {
+    width: 1200px;
+  }
+
   .presentation__preview {
     min-height: 122px;
     margin-bottom: 65px;
@@ -1158,20 +1220,22 @@ img {
 
 .social__item {
   background-color: #81b3d2;
-  padding: 14px 12px;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .social__link {
-  display: block;
-  width: 24px;
-  height: 24px;
+  width: 100%;
+  height: 100%;
 }
 
 .social__link--vkontakte {
   background-image: url("../img/index-mobile/vk.svg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100% auto;
 }
 
 .social__link--telegram {
@@ -1243,16 +1307,45 @@ img {
     line-height: 30px;
   }
 }
-.video__preview {
-  width: 266px;
+.video {
+  width: 280px;
+  position: relative;
+}
+
+.video__interest {
   margin: 0 auto;
-  min-height: 116px;
+  padding-left: 2px;
+}
+
+.video__player {
+  display: block;
+}
+
+.video__start--img {
+  position: absolute;
+  content: "";
+  background-image: url("../img/catalog-mobile/play-button.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 48px;
+  height: 54px;
+  border: none;
+  bottom: 60px;
+  left: 120px;
 }
 
 @media (min-width: 768px) {
-  .video__preview {
-    width: 445px;
-    min-height: 121px;
+  .video {
+    width: 648px;
+  }
+
+  .video__interest {
+    padding: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .video {
+    width: 800px;
   }
 }
 .modal-form__container {
@@ -1404,6 +1497,11 @@ img {
     padding-top: 0;
     padding-bottom: 15px;
     position: relative;
+    background-color: #f2f2f2;
+  }
+
+  .card__item--colored {
+    background-color: #eaeaea;
   }
 
   .card__photo-title {
@@ -1431,6 +1529,10 @@ img {
 @media (min-width: 1200px) {
   .card {
     width: 1200px;
+  }
+
+  .card__item {
+    width: 400px;
   }
 }
 .photo-day {
@@ -1525,6 +1627,11 @@ img {
   .photo-day__photo-like--count::before {
     bottom: 4px;
     left: -30px;
+  }
+}
+@media (min-width: 1200px) {
+  .photo-day {
+    width: 1200px;
   }
 }
 /*# sourceMappingURL=style.css.map */
