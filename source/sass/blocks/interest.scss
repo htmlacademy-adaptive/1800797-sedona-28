@@ -3,11 +3,11 @@
 
 
 .interest {
-  margin: 0 auto;
-  padding-top: 38px;
-  padding-bottom: 49px;
   width: 284px;
-  min-height: 287px;
+}
+
+.interest--catalog {
+  width: 266px;
 }
 
 .interest__title {
@@ -27,6 +27,18 @@
   padding-bottom: 16px;
 }
 
+.interest__catalog-title {
+  @include text-reset;
+  margin-bottom: 38px;
+  width: 260px;
+}
+
+.interest__catalog-description {
+  @include text-reset;
+  margin-bottom: 38px;
+  width: 260px;
+}
+
 @media (max-width: $mobile-width-only) {
   .interest__brake-tablet {
     display: none;
@@ -36,9 +48,10 @@
 @media (min-width: $tablet-width) {
   .interest {
     width: 458px;
-    min-height: 318px;
-    padding-top: 60px;
-    padding-bottom: 55px;
+  }
+
+  .interest--catalog {
+    width: 445px;
   }
 
   .interest__title {
@@ -49,11 +62,20 @@
     margin-bottom: 44px;
     width: 435px;
   }
+
+  .interest__catalog-title {
+    margin-bottom: 38px;
+    width: 300px;
+  }
+
+  .interest__catalog-description {
+    margin-bottom: 80px;
+    width: 445px;
+  }
 }
 
 @media (min-width: $desktop-width) {
-  .interest {
-    min-height: 331px;
-    padding-bottom: 67px;
+  .interest__catalog-description {
+    margin-bottom: 75px;
   }
 }

@@ -72,6 +72,11 @@
     padding-top: 0;
     padding-bottom: 15px;
     position: relative;
+    background-color: #f2f2f2;
+  }
+
+  .card__item--colored {
+    background-color: #eaeaea;
   }
 
   .card__photo-title {
@@ -100,5 +105,9 @@
 @media (min-width: $desktop-width) {
   .card {
     width: 1200px;
+  }
+
+  .card__item {
+    width: 400px;
   }
 }

@@ -25,7 +25,6 @@
 @media (min-width: $tablet-width) {
   .presentation {
     width: 648px;
-    margin: 0 auto;
   }
 
   .presentation__preview {
@@ -37,6 +36,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .presentation {
+    width: 1200px;
+  }
+
   .presentation__preview {
     min-height: 122px;
     margin-bottom: 65px;

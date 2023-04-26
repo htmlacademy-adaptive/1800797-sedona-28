@@ -1,3 +1,42 @@
-.main-container__presentation {
-  margin-bottom: 17px;
+@use "../base/variables.scss" as *;
+@use "../base/mixins.scss" as *;
+
+.main-container__interest {
+  margin: 0 auto;
+  padding-top: 38px;
+  padding-bottom: 49px;
+}
+
+.main-container__video {
+  margin: 0 auto;
+  padding-top: 17px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-container__presentation {
+    margin: 0 auto;
+    margin-bottom: 58px;
+  }
+
+  .main-container__interest {
+    padding-top: 60px;
+    padding-bottom: 55px;
+  }
+
+  .main-container__video {
+    margin: 0 auto;
+    padding-top: 0;
+    padding-bottom: 40px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .main-container__presentation {
+    margin-bottom: 62px;
+  }
+
+  .main-container__interest {
+    padding-bottom: 67px;
+  }
 }
