@@ -42,12 +42,12 @@
           <img class="hero-catalog__image" src="img/catalog-mobile/sedona-catalog.svg" width="229" height="39" alt="Приветсвенная надпись Седона.">
         </div>
       </header>
-      <section class="form">
-        <div class="form__review">
-          <h2 class="form__review-title title">
+      <section class="main-container__form form">
+        <div class="form__preview preview">
+          <h2 class="preview__title-form title">
             Оставьте свой отзыв
           </h2>
-          <p class="form__review-description description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+          <p class="preview__description-form description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </div>
         <form class="form__field field" action="https://echo.htmlacademy.ru/" method="post">
           <div class="field__group-tablet">
@@ -86,15 +86,15 @@
             <legend class="field__title title">Ваше общее впечатление:</legend>
             <ul class="field__list">
               <li class="field__item radio">
-                <input class="radio__input" id="positive" type="radio" name="impression" value="positive" checked>
+                <input class="radio__input visually-hidden" id="positive" type="radio" name="impression" value="positive" checked>
                 <label class="radio__label title title--lowercase" for="positive">Скорее положительное:</label>
               </li>
               <li class="field__item radio">
-                <input class="radio__input" id="negative" type="radio" name="impression" value="negative">
+                <input class="radio__input visually-hidden" id="negative" type="radio" name="impression" value="negative">
                 <label class="radio__label title title--lowercase" for="negative">Скорее отрицательное:</label>
               </li>
               <li class="field__item radio">
-                <input class="radio__input" id="indifferently" type="radio" name="impression" value="index-mobile">
+                <input class="radio__input visually-hidden" id="indifferently" type="radio" name="impression" value="index-mobile">
                 <label class="radio__label title title--lowercase" for="indifferently">Затрудняюсь ответить:</label>
               </li>
             </ul>
