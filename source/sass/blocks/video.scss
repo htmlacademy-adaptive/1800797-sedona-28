@@ -3,7 +3,6 @@
 
 .video {
   width: 280px;
-  position: relative;
 }
 
 .video__interest {
@@ -15,17 +14,22 @@
   display: block;
 }
 
+.video__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
 .video__start--img {
   position: absolute;
   content: "";
-  background-image: url("../img/catalog-mobile/play-button.png");
+  background-image: url("../img/catalog-mobile/polygon.svg");
   background-position: center;
   background-repeat: no-repeat;
   width: 48px;
   height: 54px;
   border: none;
-  bottom: 60px;
-  left: 120px;
 }
 
 @media (min-width: $tablet-width) {

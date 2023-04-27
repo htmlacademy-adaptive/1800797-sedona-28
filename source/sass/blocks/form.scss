@@ -1,10 +1,13 @@
 @use "../base/mixins.scss" as *;
 @use "../base/variables.scss" as *;
 
-.form__review {
+.form {
   width: 280px;
-  min-height: 134px;
-  margin: 0 auto;
+}
+
+.form__preview {
+  margin: 0 auto 53px;
+  padding-top: 36px;
 }
 
 .form__field {
@@ -12,17 +15,24 @@
 }
 
 @media (min-width: $tablet-width) {
-  .form__review {
-    min-height: 88px;
-    width: 436px;
-    margin-bottom: 108px;
+  .form {
+    width: 648px;
   }
+
+  .form__preview {
+    margin-bottom: 108px;
+    padding-top: 64px;
+  }
+
 }
 
-@media (min-width: $tablet-width) {
-  .form__review {
-    min-height: 99px;
-    width: 436px;
+@media (min-width: $desktop-width) {
+  .form {
+    width: 960px;
+  }
+
+  .form__preview {
     margin-bottom: 68px;
+    padding-top: 115px;
   }
 }

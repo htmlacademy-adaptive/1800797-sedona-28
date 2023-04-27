@@ -21,6 +21,16 @@
   @include text-reset;
 }
 
+.preview__title-form {
+  margin: 0 auto 35px;
+  text-align: center;
+  width: 260px;
+}
+
+.preview__description-form {
+  @include text-reset;
+}
+
 @media (min-width: $tablet-width) {
   .preview__title-index {
     width: 520px;
@@ -32,6 +42,10 @@
 
   .preview__description-catalog {
     width: 445px;
+  }
+
+  .preview__description-form {
+    width: 436px;
   }
 }
 

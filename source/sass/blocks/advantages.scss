@@ -15,6 +15,7 @@
   background-color: #eeeeee;
   position: relative;
   padding-bottom: 4px;
+  flex-wrap: wrap;
 }
 
 .advantages__item {
@@ -33,8 +34,9 @@
 
 
 .advantages__additional {
-  @include list-reset;
-  margin-bottom: 46px;
+  margin: 0 auto;
+  padding: 0;
+  margin-bottom: 13px;
 }
 
 .advantages__title {
@@ -121,6 +123,10 @@
 
   .advantages__listing--order {
     order: 1;
+  }
+
+  .advantages__additional {
+    margin-bottom: 0;
   }
 
   .advantages__list {

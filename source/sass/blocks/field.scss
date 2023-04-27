@@ -36,6 +36,10 @@
   @include list-reset;
 }
 
+.field__item {
+  margin-bottom: 16px;
+}
+
 @media (min-width: $tablet-width) {
   .field {
     width: 648px;

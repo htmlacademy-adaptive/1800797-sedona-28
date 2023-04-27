@@ -1,0 +1,40 @@
+@use "../base/mixins.scss" as *;
+@use "../base/variables.scss" as *;
+
+.radio__label {
+  display: inline-block;
+  padding-left: 62px;
+  position: relative;
+  min-height: 46px;
+  padding-top: 10px;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 46px;
+    height: 46px;
+    display: block;
+    background-color: #f2f2f2;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    display: none;
+    background-color: $grey;
+    border-radius: 50%;
+    top: 15px;
+    left: 15px;
+  }
+}
+
+.radio__input:checked + .radio__label::after {
+  display: block;
+}
+

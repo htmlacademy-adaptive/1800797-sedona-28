@@ -12,6 +12,10 @@
   padding-top: 17px;
 }
 
+.main-container__form {
+  margin: 0 auto 22px;
+}
+
 @media (min-width: $tablet-width) {
   .main-container__presentation {
     margin: 0 auto;
@@ -27,6 +31,10 @@
     margin: 0 auto;
     padding-top: 0;
     padding-bottom: 40px;
+  }
+
+  .main-container__form {
+    margin-bottom: 64px;
   }
 }
 
