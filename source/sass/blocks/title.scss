@@ -1,6 +1,7 @@
 @use "../base/variables.scss" as *;
 
 .title {
+  font-family: "PT Sans";
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -26,13 +27,17 @@
   color: $white;
 }
 
-.title--large {
+.title--big  {
   font-size: 21px;
 }
 
 @media (min-width: $tablet-width) {
   .title {
     font-size: 21px;
+  }
+
+  .title--lowercase {
+    font-size: 18px;
   }
 
   .title--nav {

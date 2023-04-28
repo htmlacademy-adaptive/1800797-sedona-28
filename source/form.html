@@ -43,7 +43,7 @@
       </header>
       <section class="main-container__form form">
         <div class="form__preview preview">
-          <h2 class="preview__title-form title">
+          <h2 class="preview__title-form title title--large">
             Оставьте свой отзыв
           </h2>
           <p class="preview__description-form description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
@@ -72,49 +72,49 @@
             <ul class="field__list">
               <li class="field__item field__item--phone field-input">
                 <label class="field-input__label" for="user-phone">Контактный телефон*:</label>
-                <input class="field-input__input title title--lowercase" id="user-phone" type="tel" name="user-phone" placeholder="Введите телефон" required>
+                <input class="field-input__input field-input__input--icon title title--lowercase" id="user-phone" type="tel" name="user-phone" placeholder="Введите телефон" required>
               </li>
               <li class="field__item field__item--mail field-input">
                 <label class="field-input__label" for="user-mail">Электронная почта*:</label>
-                <input class="field-input__input title title--lowercase" id="user-mail" type="email" name="user-mail" placeholder="Введите e-mail" required>
+                <input class="field-input__input field-input__input--icon title title--lowercase" id="user-mail" type="email" name="user-mail" placeholder="Введите e-mail" required>
               </li>
             </ul>
           </fieldset>
           </div>
           <fieldset class="field__group field__group-third">
             <legend class="field__title title">Ваше общее впечатление:</legend>
-            <ul class="field__list">
+            <ul class="field__list field__list-radio">
               <li class="field__item radio">
                 <input class="radio__input visually-hidden" id="positive" type="radio" name="impression" value="positive" checked>
-                <label class="radio__label title title--lowercase" for="positive">Скорее положительное:</label>
+                <label class="radio__label title title--lowercase" for="positive">Скорее положительное</label>
               </li>
               <li class="field__item radio">
                 <input class="radio__input visually-hidden" id="negative" type="radio" name="impression" value="negative">
-                <label class="radio__label title title--lowercase" for="negative">Скорее отрицательное:</label>
+                <label class="radio__label title title--lowercase" for="negative">Скорее отрицательное</label>
               </li>
               <li class="field__item radio">
                 <input class="radio__input visually-hidden" id="indifferently" type="radio" name="impression" value="index-mobile">
-                <label class="radio__label title title--lowercase" for="indifferently">Затрудняюсь ответить:</label>
+                <label class="radio__label title title--lowercase" for="indifferently">Затрудняюсь ответить</label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="field__group field__group-forth">
-            <legend class="field__title title">Посещенные достопримечательности:</legend>
-            <ul class="field__list">
+            <legend class="field__title title">Посещенные<br class="field__br"> достопримечательности:</legend>
+            <ul class="field__list field__list-checkbox">
               <li class="field__item checkbox">
-                <input class="checkbox__input" id="bridge" type="checkbox" name="bridge" checked>
+                <input class="checkbox__input visually-hidden" id="bridge" type="checkbox" name="bridge" checked>
                 <label class="checkbox__label title title--lowercase" for="bridge">Мост Дьявола</label>
               </li>
               <li class="field__item checkbox">
-                <input class="checkbox__input" id="bell" type="checkbox" name="bell" checked>
+                <input class="checkbox__input visually-hidden" id="bell" type="checkbox" name="bell" checked>
                 <label class="checkbox__label title title--lowercase" for="bell">Гора-Колокол</label>
               </li>
               <li class="field__item checkbox">
-                <input class="checkbox__input" id="park" type="checkbox" name="park" checked>
+                <input class="checkbox__input visually-hidden" id="park" type="checkbox" name="park" checked>
                 <label class="checkbox__label title title--lowercase" for="park">Слайд-парк</label>
               </li>
               <li class="field__item checkbox">
-                <input class="checkbox__input" id="rock" type="checkbox" name="rock">
+                <input class="checkbox__input visually-hidden" id="rock" type="checkbox" name="rock">
                 <label class="checkbox__label title title--lowercase" for="rock">Красные скалы</label>
               </li>
             </ul>
@@ -128,7 +128,7 @@
             </label>
           </fieldset>
           <div class="field__submit-area">
-            <button class="field__button title title--bright title--link" type="submit">Отправить отзыв</button>
+            <button class="title button field__button" type="submit">Отправить отзыв</button>
             <span class="field__necessarily">* — обязательные поля</span>
           </div>
         </form>
