@@ -90,6 +90,7 @@
 
   .modal-form__title {
     @include text-reset;
+    width: 444px;
     margin-bottom: 40px;
   }
 
@@ -102,10 +103,6 @@
   .modal-form__container-review {
     width: 640px;
     padding: 52px 91px 44px 91px;
-  }
-
-  .modal-form__title {
-    width: 444px;
   }
 
   .modal-form__description-review {
