@@ -16,10 +16,38 @@
   padding-bottom: 16px;
 }
 
+.button--modal {
+  margin: 0 auto;
+  width: 180px;
+  padding: 18px 64px 14px 63px;
+}
+
+.button--modal-review {
+  width: 280px;
+  padding: 18px 62px 14px 60px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  z-index: 3;
+}
+
 @media (min-width: $tablet-width) {
   .button {
     padding-top: 15px;
     padding-bottom: 18px;
+  }
+
+  .button--modal {
+    margin: 0 auto;
+    width: 272px;
+    padding: 18px 107px 14px 108px;
+  }
+
+  .button--modal-review {
+    width: 458px;
+    bottom: 44px;
+    left: 91px;
+    padding: 18px 140px 14px 139px;
   }
 }
 

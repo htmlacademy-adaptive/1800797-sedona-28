@@ -1,24 +1,120 @@
 @use "../base/mixins.scss" as *;
 @use "../base/variables.scss" as *;
 
-.modal-form__container {
+.modal-form {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 3;
+}
+
+.modal-form--opened {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+}
+
+.modal-form--closed {
+  display: none;
+}
+
+.modal-form__container {
+  background-color: #ffffff;
   min-height: 280px;
+  width: 320px;
+  margin: auto;
+  padding: 45px 42px 35px 41px;
+}
+
+.modal-form__title {
+  @include text-reset;
+  width: 237px;
+  margin-bottom: 29px;
+}
+
+.modal-form__description {
+  @include text-reset;
+  margin-bottom: 29px;
+  width: 237px;
 }
 
 .modal-form__container-review {
   min-height: 323px;
+  width: 320px;
+  background-color: #ffffff;
+  margin: auto;
+  position: relative;
+  padding: 44px 20px 20px 20px;
 }
+
+.modal-form__container-review::after {
+  position: absolute;
+  content: "";
+  width: 320px;
+  height: 98px;
+  background-color: #f2f2f2;
+  bottom: 0;
+  left: 0;
+}
+
+/*
+.modal-form__title-review {
+  @include text-reset;
+  width: 244px;
+  padding-top: 44px;
+  margin-bottom: 30px;
+}
+*/
+
+.modal-form__description-review {
+  @include text-reset;
+  margin-bottom: 50px;
+  width: 244px;
+}
+
+/*
+.modal-form__wrapper {
+  width: 320px;
+  height: 98px;
+  background-color: #f2f2f2;
+}
+*/
 
 @media (min-width: $tablet-width) {
   .modal-form__container {
     min-height: 347px;
     width: 400px;
+    padding: 54px 47px 49px 46px;
+  }
+
+  .modal-form__title {
+    @include text-reset;
+    margin-bottom: 40px;
+  }
+
+  .modal-form__description {
+    @include text-reset;
+    margin-bottom: 40px;
+    width: 307px;
   }
 
   .modal-form__container-review {
     width: 640px;
+    padding: 52px 91px 44px 91px;
+  }
+
+  .modal-form__title {
+    width: 444px;
+  }
+
+  .modal-form__description-review {
+    width: 420px;
+    margin-bottom: 120px;
+  }
+
+  .modal-form__container-review::after {
+    width: 640px;
+    height: 146px;
   }
 }

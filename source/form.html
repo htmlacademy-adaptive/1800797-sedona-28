@@ -164,19 +164,21 @@
       </div>
     </footer>
   </div>
-    <div class="modal-form">
+    <div class="modal-form modal-form--closed">
       <div class="modal-form__container">
-        <h2 class="modal-form__title title">Что-то пошло не так!</h2>
+        <h2 class="modal-form__title title title--modal">Что-то пошло не так!</h2>
         <p class="modal-form__description description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-        <a class="modal-form__link title title--bright title--link" href="form.html">Oк</a>
+        <a class="button button--modal" href="form.html">Oк</a>
       </div>
     </div>
 
-    <div class="modal-form">
-      <div class="modal-form__container modal-form__container-review">
-        <h2 class="modal-form__title title">Ваш отзыв отправлен!</h2>
-        <p class="modal-form__description description">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы опубликуем его на сайте.</p>
-        <a class="modal-form__link title title--bright title--link" href="form.html">Закрыть окно</a>
+    <div class="modal-form modal-form--opened">
+      <div class="modal-form__container-review">
+        <h2 class="modal-form__title title title--modal">Ваш отзыв отправлен!</h2>
+        <p class="modal-form__description-review description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+        <div class="modal-form__wrapper">
+        <a class="button button--modal-review" href="form.html">Закрыть окно</a>
+        </div>
       </div>
     </div>
     <script src="./js/script.js"></script>
