@@ -3,20 +3,79 @@
 
 
 .interest {
-  margin: 0 auto;
   width: 284px;
-  min-height: 287px;
+}
+
+.interest--catalog {
+  width: 266px;
+}
+
+.interest__title {
+  @include text-reset;
+  margin-bottom: 32px;
+}
+
+.interest__description {
+  @include text-reset;
+  margin-bottom: 32px;
+  width: 262px;
+}
+
+.interest__button {
+  margin: 0 auto;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.interest__catalog-title {
+  @include text-reset;
+  margin-bottom: 38px;
+  width: 260px;
+}
+
+.interest__catalog-description {
+  @include text-reset;
+  margin-bottom: 38px;
+  width: 260px;
+}
+
+@media (max-width: $mobile-width-only) {
+  .interest__brake-tablet {
+    display: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .interest {
     width: 458px;
-    min-height: 318px;
+  }
+
+  .interest--catalog {
+    width: 445px;
+  }
+
+  .interest__title {
+    margin-bottom: 44px;
+  }
+
+  .interest__description {
+    margin-bottom: 44px;
+    width: 435px;
+  }
+
+  .interest__catalog-title {
+    margin-bottom: 38px;
+    width: 445px;
+  }
+
+  .interest__catalog-description {
+    margin-bottom: 80px;
+    width: 445px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .interest {
-    min-height: 331px;
+  .interest__catalog-description {
+    margin-bottom: 75px;
   }
 }

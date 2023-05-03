@@ -1,0 +1,24 @@
+@use "../base/variables.scss" as *;
+@use "../base/mixins.scss" as *;
+
+.map {
+  min-height: 350px;
+  position: relative;
+}
+
+.map__image {
+  display: block;
+  position: absolute;
+  z-index: -1;
+}
+
+.map__frame {
+  display: block;
+  border: none;
+}
+
+@media (min-width: $tablet-width) {
+  .map__frame {
+    width: 100%;
+  }
+}

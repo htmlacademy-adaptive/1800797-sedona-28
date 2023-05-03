@@ -1,15 +1,49 @@
 @use "../base/mixins.scss" as *;
 @use "../base/variables.scss" as *;
 
-.video__preview {
-  width: 266px;
+.video {
+  width: 280px;
+}
+
+.video__interest {
   margin: 0 auto;
-  min-height: 116px;
+  padding-left: 2px;
+}
+
+.video__player {
+  display: block;
+}
+
+.video__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.video__start--img {
+  position: absolute;
+  content: "";
+  background-image: url("../img/catalog-mobile/polygon.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 48px;
+  height: 54px;
+  border: none;
 }
 
 @media (min-width: $tablet-width) {
-  .video__preview {
-    width: 445px;
-    min-height: 121px;
+  .video {
+    width: 648px;
+  }
+
+  .video__interest {
+    padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video {
+    width: 800px;
   }
 }

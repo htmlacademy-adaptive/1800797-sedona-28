@@ -1,12 +1,16 @@
-@use "./blocks/fonts.scss";
+@use "./base/fonts.scss";
 @use "./base/global.scss";
 @use "./blocks/page-wrapper.scss";
 @use "./blocks/advantages.scss";
 @use "./blocks/additional.scss";
 @use "./blocks/interest.scss";
 @use "./blocks/main-header.scss";
+@use "./blocks/preview.scss";
 @use "./blocks/description.scss";
 @use "./blocks/field.scss";
+@use "./blocks/field-input.scss";
+@use "./blocks/radio.scss";
+@use "./blocks/checkbox.scss";
 @use "./blocks/form.scss";
 @use "./blocks/hero-catalog.scss";
 @use "./blocks/hero.scss";
@@ -18,4 +22,8 @@
 @use "./blocks/title.scss";
 @use "./blocks/video.scss";
 @use "./blocks/modal-form.scss";
-@use "./blocks/visually-hidden";
+@use "./blocks/map.scss";
+@use "./blocks/button.scss";
+@use "./blocks/copyrigth.scss";
+@use "./blocks/card.scss";
+@use "./blocks/photo-day.scss";

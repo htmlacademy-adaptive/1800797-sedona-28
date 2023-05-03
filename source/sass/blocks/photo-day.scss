@@ -1,0 +1,105 @@
+@use "../base/mixins.scss" as *;
+@use "../base/variables.scss" as *;
+
+
+.photo-day {
+  width: 280px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  position: relative;
+}
+
+.photo-day__link {
+  display: block;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+@media (max-width: $mobile-width-only) {
+  .photo-day::before {
+    position: absolute;
+    content: "";
+    border-bottom: 1px solid #e5e5e5;
+    width: 320px;
+    top: 0;
+    right: -20px;
+  }
+
+  .photo-day::after {
+    position: absolute;
+    content: "";
+    border-bottom: 1px solid #e5e5e5;
+    width: 320px;
+    bottom: 0;
+    right: -20px;
+  }
+}
+
+.photo-day__photo-title {
+  margin: 0;
+  margin-bottom: 5px;
+  padding: 0;
+}
+
+.photo-day__photo-author {
+  margin: 0;
+  margin-bottom: 11px;
+  padding: 0;
+}
+
+.photo-day__photo-like {
+  padding-left: 30px;
+}
+
+.photo-day__photo-like--count::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/catalog-mobile/like-icon.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 23px;
+  height: 21px;
+  bottom: 30px;
+  left: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .photo-day {
+    width: 648px;
+    background-color: #f2f2f2;
+    padding-top: 0;
+    padding-bottom: 15px;
+  }
+
+  .photo-day__link {
+    margin-bottom: 20px;
+  }
+
+  .photo-day__photo-title {
+    padding-left: 20px;
+  }
+
+  .photo-day__photo-author {
+    padding-left: 20px;
+    margin: 0;
+  }
+
+  .photo-day__photo-like {
+    position: absolute;
+    content: "";
+    padding: 0;
+    bottom: 27px;
+    right: 20px;
+  }
+
+  .photo-day__photo-like--count::before {
+    bottom: 4px;
+    left: -30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo-day {
+    width: 1200px;
+  }
+}

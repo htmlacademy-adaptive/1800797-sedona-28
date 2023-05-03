@@ -1,0 +1,16 @@
+@use "../base/variables.scss" as *;
+@use "../base/mixins.scss" as *;
+
+.copyright {
+  display: flex;
+  align-items: center;
+  width: 129px;
+}
+
+.copyright__text {
+  @include text-reset;
+}
+
+.copyright__link {
+  margin-left: auto;
+}

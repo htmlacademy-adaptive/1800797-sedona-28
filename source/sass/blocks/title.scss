@@ -1,10 +1,10 @@
 @use "../base/variables.scss" as *;
 
 .title {
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  text-align: center;
   text-transform: uppercase;
   text-decoration: none;
   color: $black;
@@ -12,10 +12,6 @@
 
 .title--bright {
   color: $white;
-}
-
-.title--link {
-  background-color: $blue;
 }
 
 .title--lowercase {
@@ -31,15 +27,45 @@
   color: $white;
 }
 
+.title--big {
+  font-size: 21px;
+}
+
 @media (min-width: $tablet-width) {
+  .title {
+    font-size: 21px;
+  }
+
+  .title--lowercase {
+    font-size: 18px;
+  }
+
   .title--nav {
     color: $black;
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .title--nav-current {
+    color: #766357;
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .title--large {
+    font-size: 30px;
+    line-height: 26px;
+  }
+
+  .title--modal {
+    font-size: 30px;
+    line-height: 40px;
   }
 }
 
 
 @media (min-width: $desktop-width) {
-  .title--nav {
-    color: $black;
+  .title--large {
+    line-height: 30px;
   }
 }

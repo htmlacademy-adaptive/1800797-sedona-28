@@ -9,31 +9,115 @@
 }
 
 .field__group {
+  margin: 0;
+  padding: 0;
+  border: none;
+  position: relative;
+}
+
+.field__title {
+  margin: 0 auto 20px;
+  text-align: center;
+  padding-top: 24px;
+}
+
+
+.field__item--phone {
+  position: relative;
+}
+
+.field__item--phone::before {
+  position: absolute;
+  content: "";
+  width: 58px;
+  height: 58px;
+  background-color: #e6e6e6;
+  right: 0;
+  bottom: 0;
+}
+
+.field__item--phone::after {
+  position: absolute;
+  content: "";
+  background-image: url("../img/form-mobile/phone-icon.svg");
+  width: 18px;
+  height: 18px;
+  background-position: center;
+  background-repeat: no-repeat;
+  right: 20px;
+  bottom: 20px;
+}
+
+.field__item--mail {
+  position: relative;
+}
+
+.field__item--mail::before {
+  position: absolute;
+  content: "";
+  width: 58px;
+  height: 58px;
+  background-color: #e6e6e6;
+  right: 0;
+  bottom: 0;
+}
+
+.field__item--mail::after {
+  position: absolute;
+  content: "";
+  background-image: url("../img/form-mobile/mail-icon.svg");
+  width: 18px;
+  height: 18px;
+  background-position: center;
+  background-repeat: no-repeat;
+  right: 20px;
+  bottom: 20px;
+}
+
+.field__textarea {
+  border: 0;
+  background-color: #f2f2f2;
+  min-height: 150px;
+  width: 279px;
+  padding: 16px;
   margin-bottom: 50px;
 }
 
-.field__group-first {
-  min-height: 315px;
+.field__button {
+  padding-left: 49px;
+  padding-right: 49px;
 }
 
-.field__group-second {
-  min-height: 220px;
-}
-
-.field__group-third {
-  min-height: 215px;
-}
-
-.field__group-forth {
-  min-height: 304px;
-}
-
-.field__group-fifth {
-  min-height: 196px;
+.field__necessarily {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 21px;
+  display: block;
+  text-align: right;
+  margin-top: 3px;
 }
 
 .field__list {
   @include list-reset;
+}
+
+.field__item {
+  margin-bottom: 16px;
+}
+
+@media (max-width: $mobile-width-only) {
+  .field__title::before {
+    position: absolute;
+    content: "";
+    border-bottom: 1px solid #e5e5e5;
+    width: 320px;
+    top: 0;
+    right: -20px;
+  }
+
+  .field__br {
+    display: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -43,35 +127,137 @@
 
   .field__group-tablet {
     display: grid;
-    grid-template-columns: 323px 323px;
+    grid-template-columns: 295px 295px;
+    gap: 57px;
+    margin-bottom: 46px;
   }
 
-  .field__group-first {
-    min-height: 338px;
+  .field__group-first::after {
+    content: "";
+    position: absolute;
+    border-right: 1px solid #dbdbdb;
+    left: 323px;
+    top: -62px;
+    bottom: 10px;
+    width: 0;
   }
 
-  .field__group-second {
-    min-height: 338px;
+  .field__title {
+    padding-top: 0;
+    margin-bottom: 28px;
+  }
+
+  .field__group {
+    position: relative;
+  }
+
+  .field__group-third::before {
+    position: absolute;
+    content: "";
+    width: 123px;
+    height: 1px;
+    background-color: #dbdbdb;
+    left: 0;
+    top: -41px;
   }
 
   .field__group-third {
-    min-height: 162px;
+    margin-bottom: 30px;
+  }
+
+  .field__group-third::after {
+    position: absolute;
+    content: "";
+    width: 123px;
+    height: 1px;
+    background-color: #dbdbdb;
+    right: 0;
+    top: -41px;
+  }
+
+  .field__list-radio {
+    width: 575px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 280px 280px;
+    column-gap: 16px;
   }
 
   .field__group-forth {
-    min-height: 189px;
+    margin-bottom: 25px;
   }
 
-  .field__group-fifth {
-    min-height: 214px;
+  .field__group-forth::before {
+    position: absolute;
+    content: "";
+    width: 123px;
+    height: 1px;
+    background-color: #dbdbdb;
+    left: 0;
+    top: -55px;
+  }
+
+  .field__list-checkbox {
+    width: 480px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 224px 224px;
+    column-gap: 33px;
+  }
+
+  .field__group-forth::after {
+    position: absolute;
+    content: "";
+    width: 123px;
+    height: 1px;
+    background-color: #dbdbdb;
+    right: 0;
+    top: -55px;
+  }
+
+  .field__group-fifth::before {
+    position: absolute;
+    content: "";
+    width: 123px;
+    height: 1px;
+    background-color: #dbdbdb;
+    left: 0;
+    top: -42px;
+  }
+
+  .field__group-fifth::after {
+    position: absolute;
+    content: "";
+    width: 123px;
+    height: 1px;
+    background-color: #dbdbdb;
+    right: 0;
+    top: -42px;
+  }
+
+  .field__textarea {
+    min-height: 160px;
+    width: 648px;
+    margin-bottom: 43px;
   }
 
   .field__submit-area {
     display: flex;
+    width: 648px;
     justify-content: space-between;
+    align-items: center;
+  }
+
+  .field__button {
+    padding-left: 71px;
+    padding-right: 71px;
+  }
+
+  .field__necessarily {
+    font-size: 14px;
+    line-height: 21px;
   }
 }
-
 
 @media (min-width: $desktop-width) {
   .field {
@@ -79,20 +265,85 @@
   }
 
   .field__group-tablet {
-    display: grid;
-    grid-template-columns: 493px 466px;
+    grid-template-columns: 430px 430px;
+    gap: 100px;
+    margin-bottom: 55px;
   }
 
-  .field__group-third {
-    min-height: 134px;
+  .field__group-first::after {
+    content: "";
+    position: absolute;
+    border-right: 1px solid #dbdbdb;
+    left: 480px;
+    top: -62px;
+    bottom: 10px;
+    width: 0;
   }
 
-  .field__group-fifth {
-    min-height: 320px;
+  .field__group-third::before {
+    width: 280px;
+    top: -42px;
+  }
+
+  .field__group-third::after {
+    width: 280px;
+    top: -42px;
+  }
+
+  .field__list-radio {
+    width: 852px;
+    grid-template-columns: 280px 280px 280px;
+    column-gap: 28px;
+    padding-top: 17px;
+    margin-bottom: 27px;
+  }
+
+  .field__group-forth::before {
+    width: 280px;
+    top: -55px;
+  }
+
+  .field__group-forth::after {
+    width: 280px;
+    top: -55px;
+  }
+
+  .field__list-checkbox {
+    width: 871px;
+    grid-template-columns: 172px 170px 153px 184px;
+    column-gap: 64px;
+    padding-top: 31px;
+    margin-bottom: 46px;
+  }
+
+  .field__group-fifth::before {
+    width: 280px;
+    top: -41px;
+  }
+
+  .field__group-fifth::after {
+    width: 280px;
+    top: -41px;
+  }
+
+  .field__textarea {
+    width: 768px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 48px;
   }
 
   .field__submit-area {
-    display: flex;
-    justify-content: space-around;
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  .field__button {
+    padding-left: 101px;
+    padding-right: 101px;
+  }
+
+  .field__necessarily {
+    margin-top: 8px;
   }
 }

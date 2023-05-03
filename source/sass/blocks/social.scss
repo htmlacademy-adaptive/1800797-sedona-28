@@ -2,13 +2,79 @@
 @use "../base/mixins.scss" as *;
 
 .social {
-  @include list-reset;
   display: flex;
   width: 156px;
-  outline: 3px solid rgba(255, 0, 0, 0.8);
-  outline-offset: -3px;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-.social-link {
-  background-color: $blue;
+.social__item {
+  width: 44px;
+  height: 44px;
 }
+
+.social__item:not(:last-child) {
+  margin-right: 6px;
+}
+
+.social__item:nth-child(n+4) {
+  margin-top: 6px;
+}
+
+.social__link {
+  display: block;
+  height: 44px;
+  background-color: $blue;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.social__link--vkontakte {
+  background-image: url("../img/index-mobile/vk.svg");
+  background-size: 24px 24px;
+}
+
+.social__link--telegram {
+  background-image: url("../img/index-mobile/tg.svg");
+  background-size: 21px 17px;
+}
+
+.social__link--youtube {
+  background-image: url("../img/index-mobile/youtube.svg");
+  background-size: 20px 14px;
+}
+
+/*
+.social__item {
+  background-color: $blue;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social__link {
+  width: 100%;
+  height: 100%;
+}
+
+.social__link--vkontakte {
+  background-image: url("../img/index-mobile/vk.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.social__link--telegram {
+  background-image: url("../img/index-mobile/tg.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.social__link--youtube {
+  background-image: url("../img/index-mobile/youtube.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+*/
