@@ -4,7 +4,6 @@
 .social {
   display: flex;
   width: 156px;
-  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -12,6 +11,14 @@
 .social__item {
   width: 44px;
   height: 44px;
+}
+
+.social__item:not(:last-child) {
+  margin-right: 6px;
+}
+
+.social__item:nth-child(n+4) {
+  margin-top: 6px;
 }
 
 .social__link {

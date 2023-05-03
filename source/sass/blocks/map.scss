@@ -3,6 +3,13 @@
 
 .map {
   min-height: 350px;
+  position: relative;
+}
+
+.map__image {
+  display: block;
+  position: absolute;
+  z-index: -1;
 }
 
 .map__frame {
