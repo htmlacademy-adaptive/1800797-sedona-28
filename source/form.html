@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+    <link rel="icon" href="images/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="images/favicons/apple.png"> <!-- 180×180 -->
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body>
   <div class="page-wrapper">
@@ -38,7 +42,12 @@
       <header class="main-container__hero-catalog hero-catalog">
         <h1 class="visually-hidden">Форма Седоны.</h1>
         <div class="hero-catalog__wrapper">
-          <img class="hero-catalog__image" src="img/catalog-mobile/sedona-catalog.svg" width="229" height="39" alt="Приветсвенная надпись Седона.">
+           <picture>
+            <source media="(min-width: 1200px)" srcset="img/catalog-desktop/welcome-catalog-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/catalog-tablet/welcome-catalog-tablet.svg">
+            <img class="hero-catalog__image" src="img/catalog-mobile/welcome-catalog.svg" width="229" height="39"
+            alt="Приветсвенная надпись Седона.">
+          </picture>
         </div>
       </header>
       <section class="main-container__form form">

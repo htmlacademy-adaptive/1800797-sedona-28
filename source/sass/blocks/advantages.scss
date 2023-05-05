@@ -62,6 +62,11 @@
   width: 256px;
 }
 
+.advantages__image {
+  display: block;
+  width: 100%;
+}
+
 @media (max-width: $mobile-width-only) {
   .advantages__listing--stripe {
     background-image: url("../img/index-mobile/advantages-white-stripe.svg");
@@ -88,6 +93,11 @@
 }
 
 @media (min-width: $tablet-width) {
+  .advantages__listing {
+    padding-top: 52px;
+  }
+
+
   .advantages__preview {
     min-height: 103px;
     width: 520px;

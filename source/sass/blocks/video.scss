@@ -40,6 +40,10 @@
   .video__interest {
     padding: 0;
   }
+
+  .video__player {
+    width: 100%;
+  }
 }
 
 @media (min-width: $desktop-width) {
