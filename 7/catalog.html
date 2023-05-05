@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+  <link rel="icon" href="images/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="images/favicons/apple.png"> <!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
   <base href="https://htmlacademy-adaptive.github.io/1800797-sedona-28/7/">
 </head>
 
@@ -41,8 +45,12 @@
       <header class="main-container__hero-catalog hero-catalog">
         <h1 class="visually-hidden">Фото и видео Седоны.</h1>
         <div class="hero-catalog__wrapper">
-          <img class="hero-catalog__image" src="img/catalog-mobile/sedona-catalog.svg" width="229" height="39"
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/catalog-desktop/welcome-catalog-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/catalog-tablet/welcome-catalog-tablet.svg">
+            <img class="hero-catalog__image" src="img/catalog-mobile/welcome-catalog.svg" width="229" height="39"
             alt="Приветсвенная надпись Седона.">
+          </picture>
         </div>
       </header>
       <section class="main-container__presentation presentation">
@@ -53,40 +61,64 @@
         </div>
         <div class="presentation__photo-day photo-day">
           <a class="photo-day__link" href="#">
-            <img class="photo-day__image" src="img/catalog-mobile/photo-1-mobile.jpg" width="280" height="280"
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/catalog-desktop/photo-1-desktop.jpg 1x, img/catalog-desktop/photo-1-desktop@2x.jpg 2x" width="1200" height="400">
+              <source media="(min-width: 768px)" srcset="img/catalog-tablet/photo-1-tablet.jpg 1x, img/catalog-tablet/photo-1-tablet@2x.jpg 2x" width="648" height="400">
+              <img class="photo-day__image" src="img/catalog-mobile/photo-1-mobile.jpg" srcset="img/catalog-mobile/photo-1-mobile@2x.jpg 2x" width="280" height="280"
               alt="Дорога в Седону на закате.">
+            </picture>
           </a>
-          <h3 class="photo-day__photo-title description description--card">Неродные просторы</h3>
-          <p class="photo-day__photo-author description description--author">Автор фото: Борис</p>
-          <b class="photo-day__photo-like photo-day__photo-like--count description description--card">1350</b>
+          <div class="photo-day__desktop-style">
+            <h3 class="photo-day__photo-title description description--card">Неродные просторы</h3>
+            <p class="photo-day__photo-author description description--author">Автор фото: Борис</p>
+            <b class="photo-day__photo-like photo-day__photo-like--count description description--card">1350</b>
+          </div>
         </div>
         <ul class="presentation__list card">
           <li class="card__item">
             <a class="card__photo-link" href="#">
-              <img class="card__photo-image" src="img/catalog-mobile/photo-2-mobile.jpg" width="280" height="280"
-                alt="Фотогравия местной растительности.">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/catalog-desktop/photo-2-desktop.jpg 1x, img/catalog-desktop/photo-2-desktop@2x.jpg 2x" width="400" height="267">
+                <source media="(min-width: 768px)" srcset="img/catalog-tablet/photo-2-tablet.jpg 1x, img/catalog-tablet/photo-2-tablet@2x.jpg 2x" width="324" height="267">
+                <img class="card__photo-image" src="img/catalog-mobile/photo-2-mobile.jpg" srcset="img/catalog-mobile/photo-2-mobile@2x.jpg 2x" width="280" height="280"
+                  alt="Фотогравия местной растительности.">
+              </picture>
             </a>
-            <h3 class="card__photo-title description description--card">Местная растительность</h3>
-            <p class="card__photo-author description description--author">Автор фото: Сергей</p>
-            <b class="card__photo-like card__photo-like--count description description--card">143</b>
+            <div class="card__photo-style">
+              <h3 class="card__photo-title description description--card">Местная растительность</h3>
+              <p class="card__photo-author description description--author">Автор фото: Сергей</p>
+              <b class="card__photo-like card__photo-like--count description description--card">143</b>
+            </div>
           </li>
           <li class="card__item card__item--colored">
             <a class="card__photo-link" href="#">
-              <img class="card__photo-image" src="img/catalog-mobile/photo-3-mobile.jpg" width="280" height="280"
-                alt="Дорога в Седону серпантин среди зелени.">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/catalog-desktop/photo-3-desktop.jpg 1x, img/catalog-desktop/photo-3-desktop@2x.jpg 2x" width="400" height="267">
+                <source media="(min-width: 768px)" srcset="img/catalog-tablet/photo-3-tablet.jpg 1x, img/catalog-tablet/photo-3-tablet@2x.jpg 2x" width="324" height="267">
+                <img class="card__photo-image" src="img/catalog-mobile/photo-3-mobile.jpg" width="280" height="280"
+                  alt="Дорога в Седону серпантин среди зелени.">
+              </picture>
             </a>
-            <h3 class="card__photo-title description description--card">Дорога на север</h3>
-            <p class="card__photo-author description description--author">Автор фото: Петр</p>
-            <b class="card__photo-like  card__photo-like--count description description--card">96</b>
+            <div class="card__photo-style">
+              <h3 class="card__photo-title description description--card">Дорога на север</h3>
+              <p class="card__photo-author description description--author">Автор фото: Петр</p>
+              <b class="card__photo-like  card__photo-like--count description description--card">96</b>
+            </div>
           </li>
           <li class="card__item">
             <a class="card__photo-link" href="#">
-              <img class="card__photo-image" src="img/catalog-mobile/photo-4-mobile.jpg" width="280" height="280"
-                alt="Мост дьявола.">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/catalog-desktop/photo-4-desktop.jpg 1x, img/catalog-desktop/photo-4-desktop@2x.jpg 2x" width="400" height="267">
+                <source media="(min-width: 768px)" srcset="img/catalog-tablet/photo-4-tablet.jpg 1x, img/catalog-tablet/photo-4-tablet@2x.jpg 2x" width="324" height="267">
+                <img class="card__photo-image" src="img/catalog-mobile/photo-4-mobile.jpg" srcset="img/catalog-mobile/photo-4-mobile@2x.jpg 2x" width="280" height="280"
+                  alt="Мост дьявола.">
+              </picture>
             </a>
-            <h3 class="card__photo-title description description--card">Мост дьявола</h3>
-            <p class="card__photo-author description description--author">Автор фото: Антон</p>
-            <b class="card__photo-like card__photo-like--count description description--card">254</b>
+            <div class="card__photo-style">
+              <h3 class="card__photo-title description description--card">Мост дьявола</h3>
+              <p class="card__photo-author description description--author">Автор фото: Антон</p>
+              <b class="card__photo-like card__photo-like--count description description--card">254</b>
+            </div>
           </li>
         </ul>
       </section>
@@ -99,9 +131,12 @@
             подорожали в очередной раз!</p>
         </div>
         <div class="video__wrapper">
-        <img class="video__player" src="img/catalog-mobile/video-image.jpg" width="280" height="177"
-          alt="Видепрезентация Седоны.">
-
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/catalog-desktop/video-desktop.jpg 1x, img/catalog-desktop/video-desktop@2x.jpg 2x" width="800" height="500">
+          <source media="(min-width: 768px)" srcset="img/catalog-tablet/video-tablet.jpg 1x, img/catalog-tablet/video-tablet@2x.jpg 2x" width="648" height="500">
+          <img class="video__player" src="img/catalog-mobile/video-mobile.jpg" srcset="img/catalog-mobile/video-mobile@2x.jpg 2x" width="280" height="177"
+            alt="Видепрезентация Седоны.">
+        </picture>
         <button class="video__start video__start--img" type="button">
           <span class="visually-hidden">Включение видео</span>
         </button>
