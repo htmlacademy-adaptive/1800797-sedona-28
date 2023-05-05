@@ -40,8 +40,12 @@
       <header class="main-container__hero hero">
         <h1 class="visually-hidden">Городок Седона.</h1>
         <div class="hero__wrapper">
-          <img class="hero__image" src="img/index-mobile/welcome.svg" width="282" height="214"
-            alt="Добро пожаловать в великолепную Седону.">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/index-desktop/welcome-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/index-tablet/welcome-tablet.svg">
+            <img class="hero__image" src="img/index-mobile/welcome.svg" width="282" height="214"
+              alt="Добро пожаловать в великолепную Седону.">
+          </picture>
         </div>
       </header>
       <section class="main-container__advantages advantages">
