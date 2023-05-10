@@ -13,6 +13,7 @@
 
 .modal-form--opened {
   display: flex;
+  align-items: center;
 }
 
 .modal-form--closed {
@@ -58,14 +59,11 @@
   left: 0;
 }
 
-/*
 .modal-form__title-review {
   @include text-reset;
   width: 244px;
-  padding-top: 44px;
   margin-bottom: 30px;
 }
-*/
 
 .modal-form__description-review {
   @include text-reset;

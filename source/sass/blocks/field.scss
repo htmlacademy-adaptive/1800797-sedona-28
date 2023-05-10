@@ -310,11 +310,22 @@
 
   .field__list-checkbox {
     width: 871px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 64px;
+    padding-top: 31px;
+    /*
     grid-template-columns: 172px 170px 153px 184px;
     column-gap: 64px;
     padding-top: 31px;
     margin-bottom: 46px;
+    */
   }
+
+  .field__group-forth {
+    margin-bottom: 70px;
+  }
+
 
   .field__group-fifth::before {
     width: 280px;
