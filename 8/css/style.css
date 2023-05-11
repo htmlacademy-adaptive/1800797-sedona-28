@@ -286,11 +286,11 @@ img {
 .additional__item--housing::before {
   position: absolute;
   content: "";
-  background-image: url("../img/index-mobile/icon-house.svg");
+  background-image: url("../img/stack.svg#icon-house-mobile");
   background-position: center;
   background-repeat: no-repeat;
-  width: 39px;
-  height: 37px;
+  width: 40px;
+  height: 38px;
   left: 0;
   top: 0;
 }
@@ -298,11 +298,11 @@ img {
 .additional__item--food::before {
   position: absolute;
   content: "";
-  background-image: url("../img/index-mobile/icon-burger.svg");
+  background-image: url("../img/stack.svg#icon-burger-mobile");
   background-position: center;
   background-repeat: no-repeat;
   width: 40px;
-  height: 39px;
+  height: 36px;
   left: 0;
   top: 0;
 }
@@ -310,7 +310,7 @@ img {
 .additional__item--souvenir::before {
   position: absolute;
   content: "";
-  background-image: url("../img/index-mobile/icon-gift.svg");
+  background-image: url("../img/stack.svg#icon-gift-mobile");
   background-position: center;
   background-repeat: no-repeat;
   width: 32px;
@@ -1419,7 +1419,7 @@ img {
   margin: 0 auto;
   padding: 0;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
 }
 
 .main-footer__wrapper {
@@ -1449,7 +1449,7 @@ img {
     align-items: center;
     width: 648px;
     min-height: 120px;
-    padding-top: 36px;
+    padding-top: 25px;
     padding-bottom: 36px;
   }
 
@@ -1693,8 +1693,7 @@ img {
 }
 
 .social__item {
-  width: 44px;
-  height: 44px;
+  width: 48px;
 }
 
 .social__item:not(:last-child) {
@@ -1707,26 +1706,61 @@ img {
 
 .social__link {
   display: block;
-  height: 44px;
+  height: 48px;
   background-color: #81b3d2;
-  background-repeat: no-repeat;
-  background-position: center;
   cursor: pointer;
+  position: relative;
+}
+.social__link:hover {
+  background-color: #669ec0;
+}
+.social__link:active {
+  background-color: #5496bd;
 }
 
-.social__link--vkontakte {
-  background-image: url("../img/index-mobile/vk.svg");
-  background-size: 24px 24px;
+.social__link--vkontakte::after {
+  -webkit-mask: url("../img/stack.svg#icon-vk") no-repeat center;
+          mask: url("../img/stack.svg#icon-vk") no-repeat center;
+  width: 24px;
+  height: 24px;
+  content: "";
+  position: absolute;
+  background-color: #ffffff;
+  top: 12px;
+  left: 12px;
+}
+.social__link--vkontakte:active::after {
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
-.social__link--telegram {
-  background-image: url("../img/index-mobile/tg.svg");
-  background-size: 21px 17px;
+.social__link--telegram::after {
+  -webkit-mask: url("../img/stack.svg#icon-tg") no-repeat center;
+          mask: url("../img/stack.svg#icon-tg") no-repeat center;
+  width: 22px;
+  height: 18px;
+  content: "";
+  position: absolute;
+  background-color: #ffffff;
+  top: 14px;
+  left: 12px;
+}
+.social__link--telegram:active::after {
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
-.social__link--youtube {
-  background-image: url("../img/index-mobile/youtube.svg");
-  background-size: 20px 14px;
+.social__link--youtube::after {
+  -webkit-mask: url("../img/stack.svg#icon-youtube") no-repeat center;
+          mask: url("../img/stack.svg#icon-youtube") no-repeat center;
+  width: 20px;
+  height: 14px;
+  content: "";
+  position: absolute;
+  background-color: #ffffff;
+  top: 16px;
+  left: 15px;
+}
+.social__link--youtube:active::after {
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 /*
@@ -2088,23 +2122,18 @@ img {
   width: 129px;
 }
 
-.copyright__text {
-  margin: 0 auto;
-  padding: 0;
-  text-align: center;
-}
-.copyright__text:hover {
-  color: #81b3d2;
-}
-.copyright__text:active {
-  color: #b3b3b3;
-}
-
 .copyright__link {
   display: flex;
   align-items: center;
   margin-left: auto;
   text-decoration: none;
+  color: #000000;
+}
+.copyright__link:hover {
+  color: #81b3d2;
+}
+.copyright__link:active {
+  color: #b3b3b3;
 }
 .copyright__link::after {
   content: "";
@@ -2120,11 +2149,9 @@ img {
   height: 35px;
   margin-left: 12px;
 }
-
 .copyright__link:hover::after {
   background-color: #81b3d2;
 }
-
 .copyright__link:active::after {
   background-color: #b3b3b3;
 }
