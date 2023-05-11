@@ -5,8 +5,12 @@
   width: 129px;
 }
 
-.copyright__text {
-  @include text-reset;
+.copyright__link {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  text-decoration: none;
+  color: $black;
 
   &:hover {
     color: $blue;
@@ -15,13 +19,6 @@
   &:active {
     color: #b3b3b3;
   }
-}
-
-.copyright__link {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-  text-decoration: none;
 
   &::after {
     content: "";
@@ -34,12 +31,12 @@
     height: 35px;
     margin-left: 12px;
   }
-}
 
-.copyright__link:hover::after {
-  background-color: $blue;
-}
+  &:hover::after {
+    background-color: $blue;
+  }
 
-.copyright__link:active::after {
-  background-color: #b3b3b3;
+  &:active::after {
+    background-color: #b3b3b3;
+  }
 }
