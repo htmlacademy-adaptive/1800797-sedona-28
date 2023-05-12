@@ -41,7 +41,7 @@
 .card__photo-like--count::before {
   position: absolute;
   content: "";
-  background-image: url("../img/catalog-mobile/like-icon.svg");
+  background-image: url("../img/stack.svg#icon-like-grey");
   background-position: center;
   background-repeat: no-repeat;
   width: 23px;
@@ -133,6 +133,6 @@
   }
 
   .card__photo-like--count::before {
-    background-image: url("../img/catalog-desktop/like-icon-white.svg");
+    background-image: url("../img/stack.svg#icon-like-white");
   }
 }

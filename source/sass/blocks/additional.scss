@@ -88,10 +88,10 @@
   .additional__item--housing::before {
     position: absolute;
     content: "";
-    background-image: url("../img/index-tablet/icon-house.svg");
+    background-image: url("../img/stack.svg#icon-house-tablet");
     background-position: center;
     background-repeat: no-repeat;
-    width: 77px;
+    width: 78px;
     height: 72px;
     left: 88px;
     top: 60px;
@@ -100,10 +100,10 @@
   .additional__item--food::before {
     position: absolute;
     content: "";
-    background-image: url("../img/index-tablet/icon-burger.svg");
+    background-image: url("../img/stack.svg#icon-burger-tablet");
     background-position: center;
     background-repeat: no-repeat;
-    width: 80px;
+    width: 82px;
     height: 68px;
     left: 88px;
     top: 60px;
@@ -112,7 +112,7 @@
   .additional__item--souvenir::before {
     position: absolute;
     content: "";
-    background-image: url("../img/index-tablet/icon-gift.svg");
+    background-image: url("../img/stack.svg#icon-gift-tablet");
     background-position: center;
     background-repeat: no-repeat;
     width: 67px;
@@ -146,7 +146,7 @@
   .additional__item--housing::before {
     position: absolute;
     content: "";
-    background-image: url("../img/index-desktop/icon-house-desktop.svg");
+    background-image: url("../img/stack.svg#icon-house-desktop");
     background-position: center;
     background-repeat: no-repeat;
     width: 80px;
@@ -158,7 +158,7 @@
   .additional__item--food::before {
     position: absolute;
     content: "";
-    background-image: url("../img/index-desktop/icon-burger-desktop.svg");
+    background-image: url("../img/stack.svg#icon-burger-desktop");
     background-position: center;
     background-repeat: no-repeat;
     width: 73px;
@@ -170,7 +170,7 @@
   .additional__item--souvenir::before {
     position: absolute;
     content: "";
-    background-image: url("../img/index-desktop/icon-gift-desktop.svg");
+    background-image: url("../img/stack.svg#icon-gift-desktop");
     background-position: center;
     background-repeat: no-repeat;
     width: 78px;
