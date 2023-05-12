@@ -355,10 +355,10 @@ img {
   .additional__item--housing::before {
     position: absolute;
     content: "";
-    background-image: url("../img/index-tablet/icon-house.svg");
+    background-image: url("../img/stack.svg#icon-house-tablet");
     background-position: center;
     background-repeat: no-repeat;
-    width: 77px;
+    width: 78px;
     height: 72px;
     left: 88px;
     top: 60px;
@@ -367,10 +367,10 @@ img {
   .additional__item--food::before {
     position: absolute;
     content: "";
-    background-image: url("../img/index-tablet/icon-burger.svg");
+    background-image: url("../img/stack.svg#icon-burger-tablet");
     background-position: center;
     background-repeat: no-repeat;
-    width: 80px;
+    width: 82px;
     height: 68px;
     left: 88px;
     top: 60px;
@@ -379,7 +379,7 @@ img {
   .additional__item--souvenir::before {
     position: absolute;
     content: "";
-    background-image: url("../img/index-tablet/icon-gift.svg");
+    background-image: url("../img/stack.svg#icon-gift-tablet");
     background-position: center;
     background-repeat: no-repeat;
     width: 67px;
@@ -416,7 +416,7 @@ img {
   .additional__item--housing::before {
     position: absolute;
     content: "";
-    background-image: url("../img/index-desktop/icon-house-desktop.svg");
+    background-image: url("../img/stack.svg#icon-house-desktop");
     background-position: center;
     background-repeat: no-repeat;
     width: 80px;
@@ -428,7 +428,7 @@ img {
   .additional__item--food::before {
     position: absolute;
     content: "";
-    background-image: url("../img/index-desktop/icon-burger-desktop.svg");
+    background-image: url("../img/stack.svg#icon-burger-desktop");
     background-position: center;
     background-repeat: no-repeat;
     width: 73px;
@@ -440,7 +440,7 @@ img {
   .additional__item--souvenir::before {
     position: absolute;
     content: "";
-    background-image: url("../img/index-desktop/icon-gift-desktop.svg");
+    background-image: url("../img/stack.svg#icon-gift-desktop");
     background-position: center;
     background-repeat: no-repeat;
     width: 78px;
@@ -688,7 +688,7 @@ img {
 .field__item--phone::after {
   position: absolute;
   content: "";
-  background-image: url("../img/form-mobile/phone-icon.svg");
+  background-image: url("../img/stack.svg#icon-phone");
   width: 18px;
   height: 18px;
   background-position: center;
@@ -714,7 +714,7 @@ img {
 .field__item--mail::after {
   position: absolute;
   content: "";
-  background-image: url("../img/form-mobile/mail-icon.svg");
+  background-image: url("../img/stack.svg#icon-mail");
   width: 18px;
   height: 18px;
   background-position: center;
@@ -1087,14 +1087,27 @@ img {
 .checkbox__label::after {
   content: "";
   position: absolute;
-  background-image: url("../img/form-mobile/tick.svg");
-  background-position: center;
-  background-repeat: no-repeat;
+  -webkit-mask: url("../img/stack.svg#icon-tick");
+          mask: url("../img/stack.svg#icon-tick");
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+          mask-position: center;
+  background-color: #333333;
   width: 22px;
   height: 16px;
   top: 15px;
   left: 12px;
   display: none;
+}
+.checkbox__label:hover::before {
+  background-color: #e5e5e5;
+}
+.checkbox__label:active::before {
+  background-color: #d5d5d5;
+}
+.checkbox__label:active::after {
+  background-color: rgba(51, 51, 51, 0.3);
 }
 
 .checkbox__input:checked + .checkbox__label::after {
@@ -1886,7 +1899,7 @@ img {
 .video__start--img {
   position: absolute;
   content: "";
-  background-image: url("../img/catalog-mobile/polygon.svg");
+  background-image: url("../img/stack.svg#icon-polygon");
   background-position: center;
   background-repeat: no-repeat;
   width: 48px;
@@ -2196,7 +2209,7 @@ img {
 .card__photo-like--count::before {
   position: absolute;
   content: "";
-  background-image: url("../img/catalog-mobile/like-icon.svg");
+  background-image: url("../img/stack.svg#icon-like-grey");
   background-position: center;
   background-repeat: no-repeat;
   width: 23px;
@@ -2286,7 +2299,7 @@ img {
   }
 
   .card__photo-like--count::before {
-    background-image: url("../img/catalog-desktop/like-icon-white.svg");
+    background-image: url("../img/stack.svg#icon-like-white");
   }
 }
 .photo-day {
@@ -2344,7 +2357,7 @@ img {
 .photo-day__photo-like--count::before {
   position: absolute;
   content: "";
-  background-image: url("../img/catalog-mobile/like-icon.svg");
+  background-image: url("../img/stack.svg#icon-like-grey");
   background-position: center;
   background-repeat: no-repeat;
   width: 23px;
@@ -2405,7 +2418,7 @@ img {
   }
 
   .photo-day__photo-like--count::before {
-    background-image: url("../img/catalog-desktop/like-icon-white.svg");
+    background-image: url("../img/stack.svg#icon-like-white");
   }
 
   .photo-day__link {
