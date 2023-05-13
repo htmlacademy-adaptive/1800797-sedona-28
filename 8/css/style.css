@@ -1899,12 +1899,16 @@ img {
 .video__start--img {
   position: absolute;
   content: "";
-  background-image: url("../img/stack.svg#icon-polygon");
-  background-position: center;
-  background-repeat: no-repeat;
+  -webkit-mask: url("../img/stack.svg#icon-polygon");
+          mask: url("../img/stack.svg#icon-polygon");
+  -webkit-mask-position: center;
+          mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
   width: 48px;
   height: 54px;
   border: none;
+  cursor: pointer;
 }
 
 @media (min-width: 768px) {
