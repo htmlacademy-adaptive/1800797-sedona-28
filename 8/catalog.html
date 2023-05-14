@@ -10,6 +10,9 @@
   <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicon/apple.png"> <!-- 180×180 -->
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="/source/fonts/ptsans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="/source/fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
+  <link href="css/style.min.css" rel="stylesheet">
   <base href="https://htmlacademy-adaptive.github.io/1800797-sedona-28/8/">
 </head>
 
@@ -86,10 +89,10 @@
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog-tablet/photo-2-tablet.webp 1x, img/catalog-tablet/photo-2-tablet@2x.webp 2x" width="324" height="267">
                 <source type="image/webp" srcset="img/catalog-mobile/photo-2-mobile.webp 1x, img/catalog-mobile/photo-2-mobile@2x.webp 2x" width="280" height="280">
 
-                <source media="(min-width: 768px)" srcset="img/catalog-desktop/photo-2-desktop.jpg 1x, img/catalog-desktop/photo-2-desktop@2x.jpg 2x" width="400" height="267">
+                <source media="(min-width: 1200px)" srcset="img/catalog-desktop/photo-2-desktop.jpg 1x, img/catalog-desktop/photo-2-desktop@2x.jpg 2x" width="400" height="267">
                 <source media="(min-width: 768px)" srcset="img/catalog-tablet/photo-2-tablet.jpg 1x, img/catalog-tablet/photo-2-tablet@2x.jpg 2x" width="324" height="267">
                 <img class="card__photo-image" src="img/catalog-mobile/photo-2-mobile.jpg" srcset="img/catalog-mobile/photo-2-mobile@2x.jpg 2x" width="280" height="280"
-                  alt="Фотогравия местной растительности.">
+                  alt="Фотография местной растительности.">
               </picture>
             </a>
             <div class="card__photo-style">
@@ -101,7 +104,7 @@
           <li class="card__item card__item--colored">
             <a class="card__photo-link" href="#">
               <picture>
-                <source media="(min-width: 768px)" srcset="img/catalog-desktop/photo-3-desktop.jpg 1x, img/catalog-desktop/photo-3-desktop@2x.jpg 2x" width="400" height="267">
+                <source media="(min-width: 1200px)" srcset="img/catalog-desktop/photo-3-desktop.jpg 1x, img/catalog-desktop/photo-3-desktop@2x.jpg 2x" width="400" height="267">
                 <source media="(min-width: 768px)" srcset="img/catalog-tablet/photo-3-tablet.jpg 1x, img/catalog-tablet/photo-3-tablet@2x.jpg 2x" width="324" height="267">
                 <img class="card__photo-image" src="img/catalog-mobile/photo-3-mobile.jpg" width="280" height="280"
                   alt="Дорога в Седону серпантин среди зелени.">
@@ -116,7 +119,7 @@
           <li class="card__item">
             <a class="card__photo-link" href="#">
               <picture>
-                <source media="(min-width: 768px)" srcset="img/catalog-desktop/photo-4-desktop.jpg 1x, img/catalog-desktop/photo-4-desktop@2x.jpg 2x" width="400" height="267">
+                <source media="(min-width: 1200px)" srcset="img/catalog-desktop/photo-4-desktop.jpg 1x, img/catalog-desktop/photo-4-desktop@2x.jpg 2x" width="400" height="267">
                 <source media="(min-width: 768px)" srcset="img/catalog-tablet/photo-4-tablet.jpg 1x, img/catalog-tablet/photo-4-tablet@2x.jpg 2x" width="324" height="267">
                 <img class="card__photo-image" src="img/catalog-mobile/photo-4-mobile.jpg" srcset="img/catalog-mobile/photo-4-mobile@2x.jpg 2x" width="280" height="280"
                   alt="Мост дьявола.">
@@ -173,7 +176,7 @@
         </ul>
         <div class="main-footer__copyright copyright">
           <a class="copyright__link" href="https://htmlacademy.ru">
-            <p class="copyright__text description">Разработано</p>
+            Разработано
             <span class="visually-hidden">HTML Academy</span>
           </a>
         </div>
