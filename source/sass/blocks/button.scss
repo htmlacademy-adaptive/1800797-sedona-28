@@ -2,7 +2,7 @@
 @use "../base/mixins.scss" as *;
 
 .button {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   display: block;
   background-color: $blue;

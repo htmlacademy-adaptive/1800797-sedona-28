@@ -4,12 +4,14 @@
 .map {
   min-height: 350px;
   position: relative;
-}
+  background-image: url("../img/index-mobile/map-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
-.map__image {
-  display: block;
-  position: absolute;
-  z-index: -1;
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/index-mobile/map-mobile@2x.jpg");
+  }
 }
 
 .map__frame {
@@ -18,7 +20,25 @@
 }
 
 @media (min-width: $tablet-width) {
+  .map {
+    background-image: url("../img/index-tablet/map-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index-tablet/map-tablet@2x.jpg");
+    }
+  }
+
   .map__frame {
     width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map {
+    background-image: url("../img/index-desktop/map-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index-desktop/map-desktop@2x.jpg");
+    }
   }
 }
