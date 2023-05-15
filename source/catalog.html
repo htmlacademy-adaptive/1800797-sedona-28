@@ -10,6 +10,9 @@
   <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicon/apple.png"> <!-- 180×180 -->
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="/source/fonts/ptsans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="/source/fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -61,6 +64,10 @@
         <div class="presentation__photo-day photo-day">
           <a class="photo-day__link" href="#">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/catalog-desktop/photo-1-desktop.webp 1x, img/catalog-desktop/photo-1-desktop@2x.webp 2x" width="1200" height="400">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog-tablet/photo-1-tablet.webp 1x, img/catalog-tablet/photo-1-tablet@2x.webp 2x" width="648" height="400">
+              <source type="image/webp" srcset="img/catalog-mobile/photo-1-mobile.webp 1x, img/catalog-mobile/photo-1-mobile@2x.webp 2x" width="280" height="280">
+
               <source media="(min-width: 1200px)" srcset="img/catalog-desktop/photo-1-desktop.jpg 1x, img/catalog-desktop/photo-1-desktop@2x.jpg 2x" width="1200" height="400">
               <source media="(min-width: 768px)" srcset="img/catalog-tablet/photo-1-tablet.jpg 1x, img/catalog-tablet/photo-1-tablet@2x.jpg 2x" width="648" height="400">
               <img class="photo-day__image" src="img/catalog-mobile/photo-1-mobile.jpg" srcset="img/catalog-mobile/photo-1-mobile@2x.jpg 2x" width="280" height="280"
@@ -77,10 +84,14 @@
           <li class="card__item">
             <a class="card__photo-link" href="#">
               <picture>
-                <source media="(min-width: 768px)" srcset="img/catalog-desktop/photo-2-desktop.jpg 1x, img/catalog-desktop/photo-2-desktop@2x.jpg 2x" width="400" height="267">
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/catalog-desktop/photo-2-desktop.webp 1x, img/catalog-desktop/photo-2-desktop@2x.webp 2x" width="400" height="267">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog-tablet/photo-2-tablet.webp 1x, img/catalog-tablet/photo-2-tablet@2x.webp 2x" width="324" height="267">
+                <source type="image/webp" srcset="img/catalog-mobile/photo-2-mobile.webp 1x, img/catalog-mobile/photo-2-mobile@2x.webp 2x" width="280" height="280">
+
+                <source media="(min-width: 1200px)" srcset="img/catalog-desktop/photo-2-desktop.jpg 1x, img/catalog-desktop/photo-2-desktop@2x.jpg 2x" width="400" height="267">
                 <source media="(min-width: 768px)" srcset="img/catalog-tablet/photo-2-tablet.jpg 1x, img/catalog-tablet/photo-2-tablet@2x.jpg 2x" width="324" height="267">
                 <img class="card__photo-image" src="img/catalog-mobile/photo-2-mobile.jpg" srcset="img/catalog-mobile/photo-2-mobile@2x.jpg 2x" width="280" height="280"
-                  alt="Фотогравия местной растительности.">
+                  alt="Фотография местной растительности.">
               </picture>
             </a>
             <div class="card__photo-style">
@@ -92,7 +103,7 @@
           <li class="card__item card__item--colored">
             <a class="card__photo-link" href="#">
               <picture>
-                <source media="(min-width: 768px)" srcset="img/catalog-desktop/photo-3-desktop.jpg 1x, img/catalog-desktop/photo-3-desktop@2x.jpg 2x" width="400" height="267">
+                <source media="(min-width: 1200px)" srcset="img/catalog-desktop/photo-3-desktop.jpg 1x, img/catalog-desktop/photo-3-desktop@2x.jpg 2x" width="400" height="267">
                 <source media="(min-width: 768px)" srcset="img/catalog-tablet/photo-3-tablet.jpg 1x, img/catalog-tablet/photo-3-tablet@2x.jpg 2x" width="324" height="267">
                 <img class="card__photo-image" src="img/catalog-mobile/photo-3-mobile.jpg" width="280" height="280"
                   alt="Дорога в Седону серпантин среди зелени.">
@@ -107,7 +118,7 @@
           <li class="card__item">
             <a class="card__photo-link" href="#">
               <picture>
-                <source media="(min-width: 768px)" srcset="img/catalog-desktop/photo-4-desktop.jpg 1x, img/catalog-desktop/photo-4-desktop@2x.jpg 2x" width="400" height="267">
+                <source media="(min-width: 1200px)" srcset="img/catalog-desktop/photo-4-desktop.jpg 1x, img/catalog-desktop/photo-4-desktop@2x.jpg 2x" width="400" height="267">
                 <source media="(min-width: 768px)" srcset="img/catalog-tablet/photo-4-tablet.jpg 1x, img/catalog-tablet/photo-4-tablet@2x.jpg 2x" width="324" height="267">
                 <img class="card__photo-image" src="img/catalog-mobile/photo-4-mobile.jpg" srcset="img/catalog-mobile/photo-4-mobile@2x.jpg 2x" width="280" height="280"
                   alt="Мост дьявола.">
@@ -144,7 +155,7 @@
     </main>
     <footer class="main-footer">
       <div class="main-footer__wrapper">
-        <p class="main-footer__hashtag title">#visitsedona</p>
+        <p class="main-footer__hashtag title title--big">#visitsedona</p>
         <ul class="main-footer__social social">
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
@@ -163,13 +174,8 @@
           </li>
         </ul>
         <div class="main-footer__copyright copyright">
-          <p class="copyright__text description">Разработано</p>
           <a class="copyright__link" href="https://htmlacademy.ru">
-            <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="29" height="35"
-              fill="none" viewBox="0 0 29 35">
-              <path fill="#000"
-                d="M14.65.45h-.1l-13.5 1.4v24.7l13.5 8 13.4-8V1.85L14.65.45Zm11.4 12.1-11.5-6.8v-.1h-.1l-.1-.1v.1l-11.4 6.9v-9l11.5-1.2 11.6 1.2v9Zm-11.6-5.3 11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1-11.4-6.7 11.4-6.8Zm-11.5 8.3 11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9-11.5-6.8v-9.9Z" />
-            </svg>
+            Разработано
             <span class="visually-hidden">HTML Academy</span>
           </a>
         </div>

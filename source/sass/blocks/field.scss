@@ -39,7 +39,7 @@
 .field__item--phone::after {
   position: absolute;
   content: "";
-  background-image: url("../img/form-mobile/phone-icon.svg");
+  background-image: url("../img/stack.svg#icon-phone");
   width: 18px;
   height: 18px;
   background-position: center;
@@ -65,7 +65,7 @@
 .field__item--mail::after {
   position: absolute;
   content: "";
-  background-image: url("../img/form-mobile/mail-icon.svg");
+  background-image: url("../img/stack.svg#icon-mail");
   width: 18px;
   height: 18px;
   background-position: center;
@@ -314,12 +314,6 @@
     flex-wrap: wrap;
     gap: 64px;
     padding-top: 31px;
-    /*
-    grid-template-columns: 172px 170px 153px 184px;
-    column-gap: 64px;
-    padding-top: 31px;
-    margin-bottom: 46px;
-    */
   }
 
   .field__group-forth {

@@ -24,12 +24,13 @@
 .video__start--img {
   position: absolute;
   content: "";
-  background-image: url("../img/catalog-mobile/polygon.svg");
-  background-position: center;
-  background-repeat: no-repeat;
+  mask: url("../img/stack.svg#icon-polygon");
+  mask-position: center;
+  mask-repeat: no-repeat;
   width: 48px;
   height: 54px;
   border: none;
+  cursor: pointer;
 }
 
 @media (min-width: $tablet-width) {

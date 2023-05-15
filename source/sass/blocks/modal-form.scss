@@ -8,15 +8,16 @@
   height: 100%;
   width: 100%;
   background: rgba(0, 0, 0, 0.3);
-  z-index: 3;
-}
-
-.modal-form--opened {
+  z-index: 5;
   display: flex;
   align-items: center;
 }
 
-.modal-form--closed {
+.modal-form--wrong {
+  display: none;
+}
+
+.modal-form--review {
   display: none;
 }
 

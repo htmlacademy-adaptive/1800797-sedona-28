@@ -9,8 +9,7 @@
 }
 
 .social__item {
-  width: 44px;
-  height: 44px;
+  width: 48px;
 }
 
 .social__item:not(:last-child) {
@@ -23,58 +22,67 @@
 
 .social__link {
   display: block;
-  height: 44px;
+  height: 48px;
   background-color: $blue;
-  background-repeat: no-repeat;
-  background-position: center;
   cursor: pointer;
+  position: relative;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+  }
 }
 
 .social__link--vkontakte {
-  background-image: url("../img/index-mobile/vk.svg");
-  background-size: 24px 24px;
+  &::after {
+    mask: url("../img/stack.svg#icon-vk") no-repeat center;
+    width: 24px;
+    height: 24px;
+    content: "";
+    position: absolute;
+    background-color: $white;
+    top: 12px;
+    left: 12px;
+  }
+
+  &:active::after {
+    background-color: rgb(255, 255, 255, 0.3);
+  }
 }
 
 .social__link--telegram {
-  background-image: url("../img/index-mobile/tg.svg");
-  background-size: 21px 17px;
+  &::after {
+    mask: url("../img/stack.svg#icon-tg") no-repeat center;
+    width: 22px;
+    height: 18px;
+    content: "";
+    position: absolute;
+    background-color: $white;
+    top: 14px;
+    left: 12px;
+  }
+
+  &:active::after {
+    background-color: rgb(255, 255, 255, 0.3);
+  }
 }
 
 .social__link--youtube {
-  background-image: url("../img/index-mobile/youtube.svg");
-  background-size: 20px 14px;
-}
+  &::after {
+    mask: url("../img/stack.svg#icon-youtube") no-repeat center;
+    width: 20px;
+    height: 14px;
+    content: "";
+    position: absolute;
+    background-color: $white;
+    top: 16px;
+    left: 15px;
+  }
 
-/*
-.social__item {
-  background-color: $blue;
-  width: 44px;
-  height: 44px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  &:active::after {
+    background-color: rgb(255, 255, 255, 0.3);
+  }
 }
-
-.social__link {
-  width: 100%;
-  height: 100%;
-}
-
-.social__link--vkontakte {
-  background-image: url("../img/index-mobile/vk.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.social__link--telegram {
-  background-image: url("../img/index-mobile/tg.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.social__link--youtube {
-  background-image: url("../img/index-mobile/youtube.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-*/

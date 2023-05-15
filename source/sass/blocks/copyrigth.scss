@@ -2,15 +2,41 @@
 @use "../base/mixins.scss" as *;
 
 .copyright {
-  display: flex;
-  align-items: center;
   width: 129px;
 }
 
-.copyright__text {
-  @include text-reset;
-}
-
 .copyright__link {
+  display: flex;
+  align-items: center;
   margin-left: auto;
+  text-decoration: none;
+  color: $black;
+
+  &:hover {
+    color: $blue;
+  }
+
+  &:active {
+    color: #b3b3b3;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    mask: url("../img/stack.svg#academy-icon");
+    mask-repeat: no-repeat;
+    mask-position: center;
+    background-color: $black;
+    width: 29px;
+    height: 35px;
+    margin-left: 12px;
+  }
+
+  &:hover::after {
+    background-color: $blue;
+  }
+
+  &:active::after {
+    background-color: #b3b3b3;
+  }
 }

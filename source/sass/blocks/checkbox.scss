@@ -23,14 +23,27 @@
   &::after {
     content: "";
     position: absolute;
-    background-image: url("../img/form-mobile/tick.svg");
-    background-position: center;
-    background-repeat: no-repeat;
+    mask: url("../img/stack.svg#icon-tick");
+    mask-repeat: no-repeat;
+    mask-position: center;
+    background-color: $grey;
     width: 22px;
     height: 16px;
     top: 15px;
     left: 12px;
     display: none;
+  }
+
+  &:hover::before {
+    background-color: #e5e5e5;
+  }
+
+  &:active::before {
+    background-color: #d5d5d5;
+  }
+
+  &:active::after {
+    background-color: rgb(51, 51, 51, 0.3);
   }
 }
 
