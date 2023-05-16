@@ -9,11 +9,17 @@
 
 .main-container__video {
   margin: 0 auto;
-  padding-top: 17px;
+  padding-top: 18px;
 }
 
 .main-container__form {
   margin: 0 auto 22px;
+}
+
+@media (max-width: $mobile-width-only) {
+  .main-container__map {
+    margin-bottom: 8px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -45,5 +51,9 @@
 
   .main-container__interest {
     padding-bottom: 66px;
+  }
+
+  .main-container__video {
+    padding-bottom: 85px;
   }
 }

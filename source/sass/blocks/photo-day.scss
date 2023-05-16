@@ -41,18 +41,18 @@
 
 .photo-day__photo-title {
   margin: 0;
-  margin-bottom: 5px;
+  margin-bottom: 1px;
   padding: 0;
 }
 
 .photo-day__photo-author {
   margin: 0;
-  margin-bottom: 11px;
+  margin-bottom: 16px;
   padding: 0;
 }
 
 .photo-day__photo-like {
-  padding-left: 30px;
+  padding-left: 37px;
 }
 
 .photo-day__photo-like--count::before {
@@ -76,7 +76,7 @@
   }
 
   .photo-day__link {
-    margin-bottom: 20px;
+    margin-bottom: 22px;
   }
 
   .photo-day__photo-title {
@@ -111,6 +111,10 @@
     padding-bottom: 0;
   }
 
+  .photo-day__photo-title {
+    padding-top: 22px;
+  }
+
   .photo-day__desktop-style {
     position: absolute;
     width: 1200px;
@@ -121,6 +125,7 @@
 
   .photo-day__photo-like--count::before {
     background-image: url("../img/stack.svg#icon-like-white");
+    left: -32px;
   }
 
   .photo-day__link {

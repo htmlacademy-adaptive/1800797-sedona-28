@@ -26,13 +26,14 @@
   min-height: 280px;
   width: 320px;
   margin: auto;
+  margin-top: 116px;
   padding: 45px 42px 35px 41px;
 }
 
 .modal-form__title {
   @include text-reset;
   width: 237px;
-  margin-bottom: 29px;
+  margin-bottom: 23px;
 }
 
 .modal-form__description {
@@ -63,7 +64,7 @@
 .modal-form__title-review {
   @include text-reset;
   width: 244px;
-  margin-bottom: 30px;
+  margin-bottom: 26px;
 }
 
 .modal-form__description-review {
@@ -84,29 +85,29 @@
   .modal-form__container {
     min-height: 347px;
     width: 400px;
-    padding: 54px 47px 49px 46px;
+    padding: 48px 47px 49px 46px;
   }
 
   .modal-form__title-review {
     @include text-reset;
     width: 444px;
-    margin-bottom: 40px;
+    margin-bottom: 23px;
   }
 
   .modal-form__description {
     @include text-reset;
-    margin-bottom: 40px;
+    margin-bottom: 46px;
     width: 307px;
   }
 
   .modal-form__container-review {
     width: 640px;
-    padding: 52px 91px 44px 91px;
+    padding: 45px 91px 44px 91px;
   }
 
   .modal-form__description-review {
     width: 420px;
-    margin-bottom: 120px;
+    margin-bottom: 153px;
   }
 
   .modal-form__container-review::after {

@@ -11,7 +11,7 @@
 
 .card__item {
   width: 280px;
-  padding-top: 24px;
+  padding-top: 25px;
   padding-bottom: 25px;
   position: relative;
 }
@@ -24,18 +24,18 @@
 
 .card__photo-title {
   margin: 0;
-  margin-bottom: 5px;
+  margin-bottom: 1px;
   padding: 0;
 }
 
 .card__photo-author {
   margin: 0;
-  margin-bottom: 11px;
+  margin-bottom: 16px;
   padding: 0;
 }
 
 .card__photo-like {
-  padding-left: 30px;
+  padding-left: 37px;
 }
 
 .card__photo-like--count::before {
@@ -77,6 +77,10 @@
     padding-bottom: 15px;
     position: relative;
     background-color: #f2f2f2;
+  }
+
+  .card__photo-link {
+    margin-bottom: 22px;
   }
 
   .card__item--colored {
@@ -130,6 +134,16 @@
 
   .card__photo-link {
     margin-bottom: 0;
+  }
+
+  .card__photo-title {
+    padding-left: 25px;
+    padding-top: 18px;
+    margin-bottom: 4px;
+  }
+
+  .card__photo-author {
+    padding-left: 25px;
   }
 
   .card__photo-like--count::before {

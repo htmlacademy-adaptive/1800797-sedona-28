@@ -29,7 +29,7 @@
 
 .interest__catalog-title {
   @include text-reset;
-  margin-bottom: 38px;
+  margin-bottom: 27px;
   width: 260px;
 }
 
@@ -64,19 +64,19 @@
   }
 
   .interest__catalog-title {
-    margin-bottom: 38px;
+    margin-bottom: 30px;
     width: 445px;
   }
 
   .interest__catalog-description {
-    margin-bottom: 80px;
+    margin-bottom: 89px;
     width: 445px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .interest__catalog-description {
-    margin-bottom: 75px;
+    margin-bottom: 87px;
   }
 
   .interest__description {
