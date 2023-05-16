@@ -12,7 +12,7 @@
 
 .interest__title {
   @include text-reset;
-  margin-bottom: 32px;
+  margin-bottom: 21px;
 }
 
 .interest__description {
@@ -55,7 +55,7 @@
   }
 
   .interest__title {
-    margin-bottom: 44px;
+    margin-bottom: 32px;
   }
 
   .interest__description {
@@ -77,5 +77,9 @@
 @media (min-width: $desktop-width) {
   .interest__catalog-description {
     margin-bottom: 75px;
+  }
+
+  .interest__description {
+    margin-bottom: 42px;
   }
 }

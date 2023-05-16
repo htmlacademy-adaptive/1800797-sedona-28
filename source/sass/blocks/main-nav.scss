@@ -14,7 +14,7 @@
   cursor: pointer;
   position: absolute;
   right: 20px;
-  top: 17px;
+  top: 16px;
   z-index: 2;
   border: none;
   background-color: $blue;
@@ -58,10 +58,10 @@
     content: "";
     position: absolute;
     background-color: $white;
-    width: 30px;
-    height: 2px;
+    width: 29px;
+    height: 4px;
     top: 10px;
-    left: -5px;
+    left: -2px;
   }
 
   &::before {

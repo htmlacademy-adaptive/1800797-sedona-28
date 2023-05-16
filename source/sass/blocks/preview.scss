@@ -2,7 +2,7 @@
 @use "../base/variables.scss" as *;
 
 .preview__title-index {
-  margin: 0 auto 35px;
+  margin: 0 auto 36px;
   text-align: center;
   width: 260px;
 }
@@ -34,6 +34,7 @@
 @media (min-width: $tablet-width) {
   .preview__title-index {
     width: 520px;
+    margin-bottom: 29px;
   }
 
   .preview__title-catalog {

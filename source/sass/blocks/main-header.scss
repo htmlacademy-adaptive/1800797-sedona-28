@@ -10,13 +10,14 @@
 .main-header__logo {
   position: absolute;
   top: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 67px;
   z-index: 2;
 }
 
 @media (min-width: $tablet-width) {
   .main-header__logo {
     z-index: 4;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
