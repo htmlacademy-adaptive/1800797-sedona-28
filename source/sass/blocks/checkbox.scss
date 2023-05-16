@@ -47,6 +47,11 @@
   }
 }
 
+.checkbox__input:focus + .checkbox__label {
+  outline: 2px solid $black;
+  border-radius: 1px;
+}
+
 .checkbox__input:checked + .checkbox__label::after {
   display: block;
 }

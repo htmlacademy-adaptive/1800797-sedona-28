@@ -23,6 +23,24 @@
   padding: 18px 64px 14px 63px;
   font-size: 18px;
   text-transform: uppercase;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    color: rgb(255, 255, 255, 0.3);
+  }
+
+  &:focus {
+    outline: none;
+    background-color: #5496bd;
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+  }
 }
 
 .button--modal-review {
@@ -34,6 +52,24 @@
   bottom: 20px;
   left: 20px;
   z-index: 3;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    color: rgb(255, 255, 255, 0.3);
+  }
+
+  &:focus {
+    outline: none;
+    background-color: #5496bd;
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+  }
 }
 
 @media (min-width: $tablet-width) {

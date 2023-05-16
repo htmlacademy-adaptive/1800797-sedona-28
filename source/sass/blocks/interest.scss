@@ -25,6 +25,24 @@
   margin: 0 auto;
   padding-top: 16px;
   padding-bottom: 16px;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    color: rgb(255, 255, 255, 0.3);
+  }
+
+  &:focus {
+    outline: none;
+    background-color: #5496bd;
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+  }
 }
 
 .interest__catalog-title {

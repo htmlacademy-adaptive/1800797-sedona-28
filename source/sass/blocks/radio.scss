@@ -32,6 +32,23 @@
     top: 15px;
     left: 15px;
   }
+
+  &:hover::before {
+    background-color: #e5e5e5;
+  }
+
+  &:active::before {
+    background-color: #d5d5d5;
+  }
+
+  &:active::after {
+    background-color: rgb(51, 51, 51, 0.3);
+  }
+}
+
+.radio__input:focus + .radio__label {
+  outline: 2px solid $black;
+  border-radius: 1px;
 }
 
 .radio__input:checked + .radio__label::after {
