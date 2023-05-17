@@ -209,6 +209,7 @@ img {
 
   .advantages__description {
     margin-bottom: 30px;
+    width: 190px;
   }
 
   .advantages__preview {
@@ -228,10 +229,6 @@ img {
 
   .advantages__title {
     width: 150px;
-  }
-
-  .advantages__description {
-    width: 190px;
   }
 
   .advantages__description-list {
