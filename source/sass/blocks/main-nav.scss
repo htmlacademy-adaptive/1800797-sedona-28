@@ -201,13 +201,11 @@
 
     &:active {
       color: rgb(0, 0, 0, 0.3);
-      outline: none;
     }
 
     &:focus {
-      outline: 3px solid #072437;
-      border-radius: 4px;
-      outline-offset: -3px;
+      outline: none;
+      color: rgb(0, 0, 0, 0.3);
     }
   }
 }

@@ -13,11 +13,11 @@
 
   &:active {
     background-color: $white;
-    outline: none;
+    outline: 4px solid #e5e5e5;
   }
 
   &:focus {
-    outline: none;
+    outline: 4px solid #e5e5e5;
   }
 }
 

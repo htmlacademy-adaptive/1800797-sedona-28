@@ -36,9 +36,8 @@
   }
 
   &:focus {
-    outline: 2px solid #000000;
-    border: 2px;
-    outline-offset: 2px;
+    outline: none;
+    background-color: #5496bd;
   }
 }
 

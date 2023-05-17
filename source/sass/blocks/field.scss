@@ -81,6 +81,19 @@
   width: 279px;
   padding: 16px;
   margin-bottom: 50px;
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:active {
+    background-color: $white;
+    outline: 4px solid #e5e5e5;
+  }
+
+  &:focus {
+    outline: 4px solid #e5e5e5;
+  }
 }
 
 .field__button {
