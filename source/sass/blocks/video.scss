@@ -21,6 +21,11 @@
   position: relative;
 }
 
+.video__start:focus {
+  outline: none;
+  background-color: $black;
+}
+
 .video__start--img {
   position: absolute;
   content: "";
@@ -31,6 +36,14 @@
   height: 54px;
   border: none;
   cursor: pointer;
+
+  &:hover {
+    background-color: $white;
+  }
+
+  &:active {
+    background-color: $grey;
+  }
 }
 
 @media (min-width: $tablet-width) {

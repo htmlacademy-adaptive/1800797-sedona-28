@@ -27,7 +27,11 @@
   color: $white;
 }
 
-.title--big {
+.title--footer {
+  font-size: 21px;
+}
+
+.title--index {
   font-size: 21px;
 }
 
@@ -52,7 +56,12 @@
     line-height: 21px;
   }
 
-  .title--large {
+  .title--index {
+    font-size: 30px;
+    line-height: 26px;
+  }
+
+  .title--catalog {
     font-size: 30px;
     line-height: 26px;
   }
@@ -63,9 +72,8 @@
   }
 }
 
-
 @media (min-width: $desktop-width) {
-  .title--large {
+  .title--index {
     line-height: 30px;
   }
 }

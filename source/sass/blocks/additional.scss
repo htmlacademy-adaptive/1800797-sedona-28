@@ -23,8 +23,8 @@
   background-repeat: no-repeat;
   width: 40px;
   height: 38px;
-  left: 0;
-  top: 0;
+  left: 1px;
+  top: -7px;
 }
 
 .additional__item--food::before {
@@ -35,8 +35,8 @@
   background-repeat: no-repeat;
   width: 40px;
   height: 36px;
-  left: 0;
-  top: 0;
+  left: 1px;
+  top: -6px;
 }
 
 .additional__item--souvenir::before {
@@ -47,8 +47,8 @@
   background-repeat: no-repeat;
   width: 32px;
   height: 38px;
-  left: 0;
-  top: 0;
+  left: 5px;
+  top: -7px;
 }
 
 .additional__title {
@@ -77,12 +77,13 @@
   .additional {
     flex-direction: row;
     width: 768px;
+    padding-top: 0;
   }
 
   .additional__item {
     width: 256px;
-    padding-top: 158px;
-    padding-bottom: 61px;
+    padding-top: 154px;
+    padding-bottom: 62px;
   }
 
   .additional__item--housing::before {
@@ -94,7 +95,7 @@
     width: 78px;
     height: 72px;
     left: 88px;
-    top: 60px;
+    top: 59px;
   }
 
   .additional__item--food::before {
@@ -105,8 +106,8 @@
     background-repeat: no-repeat;
     width: 82px;
     height: 68px;
-    left: 88px;
-    top: 60px;
+    left: 86px;
+    top: 61px;
   }
 
   .additional__item--souvenir::before {
@@ -117,13 +118,13 @@
     background-repeat: no-repeat;
     width: 67px;
     height: 75px;
-    left: 88px;
-    top: 60px;
+    left: 97px;
+    top: 63px;
   }
 
   .additional__title {
     @include text-reset;
-    margin-bottom: 16px;
+    margin-bottom: 25px;
   }
 
   .additional__description {
@@ -135,6 +136,10 @@
 @media (min-width: $desktop-width) {
   .additional {
     width: 1200px;
+  }
+
+  .additional__title {
+    margin-bottom: 24px;
   }
 
   .additional__item {
@@ -152,7 +157,7 @@
     width: 80px;
     height: 73px;
     left: 160px;
-    top: 60px;
+    top: 70px;
   }
 
   .additional__item--food::before {
@@ -163,8 +168,8 @@
     background-repeat: no-repeat;
     width: 73px;
     height: 69px;
-    left: 160px;
-    top: 60px;
+    left: 161px;
+    top: 73px;
   }
 
   .additional__item--souvenir::before {
@@ -175,8 +180,8 @@
     background-repeat: no-repeat;
     width: 78px;
     height: 75px;
-    left: 160px;
-    top: 60px;
+    left: 159px;
+    top: 71px;
   }
 
   .additional__description {

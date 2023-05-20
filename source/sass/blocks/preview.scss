@@ -2,7 +2,7 @@
 @use "../base/variables.scss" as *;
 
 .preview__title-index {
-  margin: 0 auto 35px;
+  margin: 0 auto 36px;
   text-align: center;
   width: 260px;
 }
@@ -12,7 +12,7 @@
 }
 
 .preview__title-catalog {
-  margin: 0 auto 35px;
+  margin: 0 auto 25px;
   text-align: center;
   width: 260px;
 }
@@ -22,7 +22,7 @@
 }
 
 .preview__title-form {
-  margin: 0 auto 29px;
+  margin: 0 auto 25px;
   text-align: center;
   width: 260px;
 }
@@ -34,10 +34,12 @@
 @media (min-width: $tablet-width) {
   .preview__title-index {
     width: 520px;
+    margin-bottom: 29px;
   }
 
   .preview__title-catalog {
     width: 445px;
+    margin-bottom: 32px;
   }
 
   .preview__description-catalog {
@@ -46,6 +48,7 @@
 
   .preview__title-form {
     width: 317px;
+    margin-bottom: 20px;
   }
 
   .preview__description-form {
@@ -56,5 +59,9 @@
 @media (min-width: $desktop-width) {
   .preview__title-index {
     width: 484px;
+  }
+
+  .preview__title-form {
+    margin-bottom: 30px;
   }
 }

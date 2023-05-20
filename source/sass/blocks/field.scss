@@ -81,11 +81,42 @@
   width: 279px;
   padding: 16px;
   margin-bottom: 50px;
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:active {
+    background-color: $white;
+    outline: 4px solid #e5e5e5;
+  }
+
+  &:focus {
+    outline: 4px solid #e5e5e5;
+  }
 }
 
 .field__button {
   padding-left: 49px;
   padding-right: 49px;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    color: rgb(255, 255, 255, 0.3);
+  }
+
+  &:focus {
+    outline: none;
+    background-color: #5496bd;
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+  }
 }
 
 .field__necessarily {
@@ -105,13 +136,29 @@
   margin-bottom: 16px;
 }
 
+.field__group-introduce {
+  margin-bottom: 24px;
+}
+
+.field__group-contacts {
+  margin-bottom: 20px;
+}
+
+.field__group-impression {
+  margin-bottom: 9px;
+}
+
+.field__group-attraction {
+  margin-bottom: 8px;
+}
+
 @media (max-width: $mobile-width-only) {
   .field__title::before {
     position: absolute;
     content: "";
     border-bottom: 1px solid #e5e5e5;
     width: 320px;
-    top: 0;
+    top: -1px;
     right: -20px;
   }
 
@@ -129,10 +176,10 @@
     display: grid;
     grid-template-columns: 295px 295px;
     gap: 57px;
-    margin-bottom: 46px;
+    margin-bottom: 23px;
   }
 
-  .field__group-first::after {
+  .field__group-introduce::after {
     content: "";
     position: absolute;
     border-right: 1px solid #dbdbdb;
@@ -151,7 +198,7 @@
     position: relative;
   }
 
-  .field__group-third::before {
+  .field__group-impression::before {
     position: absolute;
     content: "";
     width: 123px;
@@ -161,11 +208,11 @@
     top: -41px;
   }
 
-  .field__group-third {
-    margin-bottom: 30px;
+  .field__group-impression {
+    margin-bottom: 33px;
   }
 
-  .field__group-third::after {
+  .field__group-impression::after {
     position: absolute;
     content: "";
     width: 123px;
@@ -183,11 +230,11 @@
     column-gap: 16px;
   }
 
-  .field__group-forth {
+  .field__group-attraction {
     margin-bottom: 25px;
   }
 
-  .field__group-forth::before {
+  .field__group-attraction::before {
     position: absolute;
     content: "";
     width: 123px;
@@ -205,7 +252,7 @@
     column-gap: 33px;
   }
 
-  .field__group-forth::after {
+  .field__group-attraction::after {
     position: absolute;
     content: "";
     width: 123px;
@@ -215,7 +262,7 @@
     top: -55px;
   }
 
-  .field__group-fifth::before {
+  .field__group-emotion::before {
     position: absolute;
     content: "";
     width: 123px;
@@ -225,7 +272,7 @@
     top: -42px;
   }
 
-  .field__group-fifth::after {
+  .field__group-emotion::after {
     position: absolute;
     content: "";
     width: 123px;
@@ -267,10 +314,10 @@
   .field__group-tablet {
     grid-template-columns: 430px 430px;
     gap: 100px;
-    margin-bottom: 55px;
+    margin-bottom: 31px;
   }
 
-  .field__group-first::after {
+  .field__group-introduce::after {
     content: "";
     position: absolute;
     border-right: 1px solid #dbdbdb;
@@ -280,12 +327,16 @@
     width: 0;
   }
 
-  .field__group-third::before {
+  .field__group-impression {
+    margin-bottom: 31px;
+  }
+
+  .field__group-impression::before {
     width: 280px;
     top: -42px;
   }
 
-  .field__group-third::after {
+  .field__group-impression::after {
     width: 280px;
     top: -42px;
   }
@@ -298,12 +349,12 @@
     margin-bottom: 27px;
   }
 
-  .field__group-forth::before {
+  .field__group-attraction::before {
     width: 280px;
     top: -55px;
   }
 
-  .field__group-forth::after {
+  .field__group-attraction::after {
     width: 280px;
     top: -55px;
   }
@@ -316,17 +367,17 @@
     padding-top: 31px;
   }
 
-  .field__group-forth {
+  .field__group-attraction {
     margin-bottom: 70px;
   }
 
 
-  .field__group-fifth::before {
+  .field__group-emotion::before {
     width: 280px;
     top: -41px;
   }
 
-  .field__group-fifth::after {
+  .field__group-emotion::after {
     width: 280px;
     top: -41px;
   }

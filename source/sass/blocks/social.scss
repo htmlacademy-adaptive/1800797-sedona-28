@@ -34,6 +34,11 @@
   &:active {
     background-color: #5496bd;
   }
+
+  &:focus {
+    outline: none;
+    background-color: #5496bd;
+  }
 }
 
 .social__link--vkontakte {

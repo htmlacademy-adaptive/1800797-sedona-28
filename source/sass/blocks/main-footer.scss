@@ -4,7 +4,7 @@
 
 .main-footer__hashtag {
   @include text-reset;
-  margin-bottom: 27px;
+  margin-bottom: 30px;
 }
 
 .main-footer__wrapper {
@@ -19,7 +19,7 @@
 
 .main-footer__social {
   @include list-reset;
-  margin-bottom: 30px;
+  margin-bottom: 31px;
 }
 
 .main-footer__copyright {
@@ -32,7 +32,7 @@
     align-items: center;
     width: 648px;
     min-height: 120px;
-    padding-top: 25px;
+    padding-top: 35px;
     padding-bottom: 36px;
   }
 
@@ -42,7 +42,7 @@
 
   .main-footer__social {
     margin: 0;
-    margin-left: 113px;
+    margin-left: 114px;
   }
 
   .main-footer__copyright {

@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
   <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicon/apple.png"> <!-- 180×180 -->
@@ -48,16 +48,16 @@
         <h1 class="visually-hidden">Форма Седоны.</h1>
         <div class="hero-catalog__wrapper">
           <picture>
-            <source media="(min-width: 1200px)" srcset="img/catalog-desktop/welcome-catalog-desktop.svg">
-            <source media="(min-width: 768px)" srcset="img/catalog-tablet/welcome-catalog-tablet.svg">
-            <img class="hero-catalog__image" src="img/catalog-mobile/welcome-catalog.svg" width="229" height="39"
+            <source media="(min-width: 1200px)" srcset="img/welcome-catalog-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/welcome-catalog-tablet.svg">
+            <img class="hero-catalog__image" src="img/welcome-catalog.svg" width="229" height="39"
               alt="Приветсвенная надпись Седона.">
           </picture>
         </div>
       </header>
       <section class="main-container__form form">
         <div class="form__preview preview">
-          <h2 class="preview__title-form title title--large">
+          <h2 class="preview__title-form title title--catalog">
             Оставьте свой отзыв
           </h2>
           <p class="preview__description-form description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а
@@ -65,27 +65,27 @@
         </div>
         <form class="form__field field" action="https://echo.htmlacademy.ru/" method="post">
           <div class="field__group-tablet">
-            <fieldset class="field__group field__group-first">
+            <fieldset class="field__group field__group-introduce">
               <legend class="field__title title">Представьтесь:</legend>
               <ul class="field__list">
                 <li class="field__item field-input">
                   <label class="field-input__label" for="user-name">Имя*:</label>
                   <input class="field-input__input title title--lowercase" id="user-name" type="text" name="user-name"
-                    value="Пётр" required>
+                    placeholder="Введите имя" value="Пётр" required>
                 </li>
                 <li class="field__item field-input">
                   <label class="field-input__label" for="user-surname">Фамилия*:</label>
                   <input class="field-input__input title title--lowercase" id="user-surname" type="text"
-                    name="user-surname" value="Пустота" required>
+                    name="user-surname" placeholder="Введите фамилию" value="Пустота" required>
                 </li>
                 <li class="field__item field-input">
                   <label class="field-input__label" for="user-secondname">Отчество:</label>
                   <input class="field-input__input title title--lowercase" id="user-secondname" type="text"
-                    name="user-secondname" value="Викторович" required>
+                    name="user-secondname" placeholder="Введите отчество" value="Викторович" required>
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="field__group field__group-second">
+            <fieldset class="field__group field__group-contacts">
               <legend class="field__title title">Контактная информация:</legend>
               <ul class="field__list">
                 <li class="field__item field__item--phone field-input">
@@ -101,7 +101,7 @@
               </ul>
             </fieldset>
           </div>
-          <fieldset class="field__group field__group-third">
+          <fieldset class="field__group field__group-impression">
             <legend class="field__title title">Ваше общее впечатление:</legend>
             <ul class="field__list field__list-radio">
               <li class="field__item radio">
@@ -121,7 +121,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="field__group field__group-forth">
+          <fieldset class="field__group field__group-attraction">
             <legend class="field__title title">Посещенные<br class="field__br"> достопримечательности:</legend>
             <ul class="field__list field__list-checkbox">
               <li class="field__item checkbox">
@@ -142,7 +142,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="field__group field__group-fifth">
+          <fieldset class="field__group field__group-emotion">
             <legend class="field__title title">
               Опишите свои эмоции:
             </legend>
@@ -160,7 +160,7 @@
     </main>
     <footer class="main-footer">
       <div class="main-footer__wrapper">
-        <p class="main-footer__hashtag title title--big">#visitsedona</p>
+        <p class="main-footer__hashtag title title--footer">#visitsedona</p>
         <ul class="main-footer__social social">
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
