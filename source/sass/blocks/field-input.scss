@@ -19,6 +19,11 @@
   &:focus {
     outline: 4px solid #e5e5e5;
   }
+
+  &:disabled {
+    background-color: #e5e5e5;
+    color: $white;
+  }
 }
 
 .field-input__input--icon {
