@@ -52,27 +52,6 @@
   overflow-y: scroll;
 }
 
-/*
-.modal-form__container-review {
-  min-height: 323px;
-  width: 320px;
-  background-color: #ffffff;
-  margin: auto;
-  position: relative;
-  padding: 44px 20px 20px 20px;
-}
-
-.modal-form__container-review::after {
-  position: absolute;
-  content: "";
-  width: 320px;
-  height: 98px;
-  background-color: #f2f2f2;
-  bottom: 0;
-  left: 0;
-}
-*/
-
 .modal-form__wrapper {
   display: flex;
   width: 320px;
@@ -114,9 +93,6 @@
 
   .modal-form__container-review {
     width: 640px;
-    /*
-    padding: 45px 91px 44px 91px;
-    */
   }
 
   .modal-form__description-review {
@@ -128,10 +104,4 @@
     width: 100%;
     min-height: 146px;
   }
-  /*
-  .modal-form__container-review::after {
-    width: 640px;
-    height: 146px;
-  }
-  */
 }
