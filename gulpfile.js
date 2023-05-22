@@ -7,7 +7,6 @@ import rename from 'gulp-rename';
 import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
-import svgstore from 'gulp-svgstore';
 import { stacksvg } from "gulp-stacksvg";
 import autoprefixer from 'autoprefixer';
 import {deleteAsync} from 'del';
@@ -83,12 +82,13 @@ const createStack = () => {
     .pipe(gulp.dest('build/img'));
 }
 
-// Fonts
+// Copy
 
 const copy = (done) => {
   gulp.src([
     'source/fonts/*.{woff2,woff}',
     'source/*.ico',
+    'source/manifest.webmanifest',
   ], {
     base: 'source'
   })
@@ -136,7 +136,7 @@ const watcher = () => {
 export const build = gulp.series(
   clean,
   copy,
-    optimizeImages,
+  optimizeImages,
   gulp.parallel(
     styles,
     html,
@@ -151,7 +151,7 @@ export const build = gulp.series(
 export default gulp.series(
   clean,
   copy,
-    copyImages,
+  copyImages,
   gulp.parallel(
     styles,
     html,
