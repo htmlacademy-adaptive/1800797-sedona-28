@@ -2,7 +2,7 @@
 @use "../base/mixins.scss" as *;
 
 .copyright {
-  width: 129px;
+  width: 130px;
 }
 
 .copyright__link {
@@ -39,5 +39,6 @@
 
   &:active::after {
     background-color: #b3b3b3;
+    outline: none;
   }
 }
