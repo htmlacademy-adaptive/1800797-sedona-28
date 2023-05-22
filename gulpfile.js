@@ -7,7 +7,6 @@ import rename from 'gulp-rename';
 import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
-import svgstore from 'gulp-svgstore';
 import { stacksvg } from "gulp-stacksvg";
 import autoprefixer from 'autoprefixer';
 import {deleteAsync} from 'del';
@@ -34,7 +33,7 @@ export const styles = () => {
 const html = () => {
   return gulp.src('source/*.html')
     .pipe(htmlmin({collapseWhitespace: true}))
-    .pipe(gulp.dest('build'))
+    .pipe(gulp.dest('build'));
 }
 
 // Scripts
@@ -42,7 +41,7 @@ const html = () => {
 const scripts = () => {
   return gulp.src('source/js/*.js')
     .pipe(terser())
-    .pipe(gulp.dest('build/js'))
+    .pipe(gulp.dest('build/js'));
 }
 
 // Images
@@ -83,12 +82,13 @@ const createStack = () => {
     .pipe(gulp.dest('build/img'));
 }
 
-// Fonts
+// Copy
 
 const copy = (done) => {
   gulp.src([
     'source/fonts/*.{woff2,woff}',
     'source/*.ico',
+    'source/manifest.webmanifest',
   ], {
     base: 'source'
   })
@@ -128,7 +128,7 @@ const reload = (done) => {
 const watcher = () => {
   gulp.watch('source/sass/**/*.scss', gulp.series(styles));
   gulp.watch('source/js/script.js', gulp.series(scripts));
-  gulp.watch('source/*.html').on('change', browser.reload);
+  gulp.watch('source/*.html', gulp.series(html, reload));
 }
 
 // Build
@@ -136,7 +136,7 @@ const watcher = () => {
 export const build = gulp.series(
   clean,
   copy,
-    optimizeImages,
+  optimizeImages,
   gulp.parallel(
     styles,
     html,
@@ -151,7 +151,7 @@ export const build = gulp.series(
 export default gulp.series(
   clean,
   copy,
-    copyImages,
+  copyImages,
   gulp.parallel(
     styles,
     html,

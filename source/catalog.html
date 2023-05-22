@@ -10,9 +10,9 @@
   <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicon/apple.png"> <!-- 180×180 -->
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="preload" href="/source/fonts/ptsans.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="/source/fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
-  <link href="css/style.min.css" rel="stylesheet">
+  <link rel="preload" href="fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
@@ -103,6 +103,10 @@
           <li class="card__item card__item--colored">
             <a class="card__photo-link" href="#">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/catalog-desktop/photo-3-desktop.webp 1x, img/catalog-desktop/photo-3-desktop@2x.webp 2x" width="400" height="267">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog-tablet/photo-3-tablet.webp 1x, img/catalog-tablet/photo-3-tablet@2x.webp 2x" width="324" height="267">
+                <source type="image/webp" srcset="img/catalog-mobile/photo-3-mobile.webp 1x, img/catalog-mobile/photo-3-mobile@2x.webp 2x" width="280" height="280">
+
                 <source media="(min-width: 1200px)" srcset="img/catalog-desktop/photo-3-desktop.jpg 1x, img/catalog-desktop/photo-3-desktop@2x.jpg 2x" width="400" height="267">
                 <source media="(min-width: 768px)" srcset="img/catalog-tablet/photo-3-tablet.jpg 1x, img/catalog-tablet/photo-3-tablet@2x.jpg 2x" width="324" height="267">
                 <img class="card__photo-image" src="img/catalog-mobile/photo-3-mobile.jpg" width="280" height="280"
@@ -118,6 +122,10 @@
           <li class="card__item">
             <a class="card__photo-link" href="#">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/catalog-desktop/photo-4-desktop.webp 1x, img/catalog-desktop/photo-4-desktop@2x.webp 2x" width="400" height="267">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog-tablet/photo-4-tablet.webp 1x, img/catalog-tablet/photo-4-tablet@2x.webp 2x" width="324" height="267">
+                <source type="image/webp" srcset="img/catalog-mobile/photo-4-mobile.webp 1x, img/catalog-mobile/photo-4-mobile@2x.webp 2x" width="280" height="280">
+
                 <source media="(min-width: 1200px)" srcset="img/catalog-desktop/photo-4-desktop.jpg 1x, img/catalog-desktop/photo-4-desktop@2x.jpg 2x" width="400" height="267">
                 <source media="(min-width: 768px)" srcset="img/catalog-tablet/photo-4-tablet.jpg 1x, img/catalog-tablet/photo-4-tablet@2x.jpg 2x" width="324" height="267">
                 <img class="card__photo-image" src="img/catalog-mobile/photo-4-mobile.jpg" srcset="img/catalog-mobile/photo-4-mobile@2x.jpg 2x" width="280" height="280"
@@ -142,6 +150,10 @@
         </div>
         <div class="video__wrapper">
         <picture>
+          <source type="image/webp" media="(min-width: 1200px)" srcset="img/catalog-desktop/video-desktop.webp 1x, img/catalog-desktop/video-desktop@2x.webp 2x" width="800" height="500">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog-tablet/video-tablet.webp 1x, img/catalog-tablet/video-tablet@2x.webp 2x" width="648" height="500">
+          <source type="image/webp" srcset="img/catalog-mobile/video-mobile.webp 1x, img/catalog-mobile/video-mobile@2x.webp 2x" width="280" height="177">
+
           <source media="(min-width: 1200px)" srcset="img/catalog-desktop/video-desktop.jpg 1x, img/catalog-desktop/video-desktop@2x.jpg 2x" width="800" height="500">
           <source media="(min-width: 768px)" srcset="img/catalog-tablet/video-tablet.jpg 1x, img/catalog-tablet/video-tablet@2x.jpg 2x" width="648" height="500">
           <img class="video__player" src="img/catalog-mobile/video-mobile.jpg" srcset="img/catalog-mobile/video-mobile@2x.jpg 2x" width="280" height="177"

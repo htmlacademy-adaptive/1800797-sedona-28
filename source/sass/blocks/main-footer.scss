@@ -1,7 +1,6 @@
 @use "../base/variables.scss" as *;
 @use "../base/mixins.scss" as *;
 
-
 .main-footer__hashtag {
   @include text-reset;
   margin-bottom: 30px;

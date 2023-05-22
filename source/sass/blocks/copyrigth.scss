@@ -2,11 +2,12 @@
 @use "../base/mixins.scss" as *;
 
 .copyright {
-  width: 129px;
+  width: 130px;
 }
 
 .copyright__link {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   margin-left: auto;
   text-decoration: none;
@@ -38,5 +39,6 @@
 
   &:active::after {
     background-color: #b3b3b3;
+    outline: none;
   }
 }

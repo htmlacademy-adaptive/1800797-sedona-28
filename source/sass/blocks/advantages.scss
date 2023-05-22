@@ -68,6 +68,10 @@
   width: 100%;
 }
 
+.advantages__span-mobile::after {
+  content: "\A";
+}
+
 @media (max-width: $mobile-width-only) {
   .advantages__listing--triangle::before {
     position: absolute;
@@ -117,7 +121,6 @@
 @media (min-width: $tablet-width) {
   .advantages__listing {
     padding-top: 52px;
-    min-height: 256px;
     width: 256px;
   }
 
@@ -146,7 +149,7 @@
   }
 
   .advantages__title {
-    width: 150px;
+    width: 151px;
   }
 
   .advantages__description-list {

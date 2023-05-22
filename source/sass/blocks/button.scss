@@ -4,6 +4,7 @@
 .button {
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
+  font-display: swap;
   display: block;
   background-color: $blue;
   color: $white;
@@ -46,7 +47,6 @@
 .button--modal-review {
   width: 280px;
   padding: 18px 62px 14px 60px;
-  position: absolute;
   font-size: 18px;
   text-transform: uppercase;
   bottom: 20px;
@@ -88,8 +88,6 @@
   .button--modal-review {
     font-size: 21px;
     width: 458px;
-    bottom: 44px;
-    left: 91px;
     padding: 18px 140px 14px 139px;
   }
 }
