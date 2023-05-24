@@ -82,6 +82,10 @@
   padding: 16px;
   margin-bottom: 50px;
 
+  &::placeholder {
+    color: rgb(0, 0, 0, 0.3);
+  }
+
   &:hover {
     background-color: #e5e5e5;
   }
@@ -165,10 +169,6 @@
     width: 320px;
     top: -1px;
     right: -20px;
-  }
-
-  .field__br {
-    display: none;
   }
 }
 
