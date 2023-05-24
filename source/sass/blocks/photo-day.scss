@@ -18,7 +18,7 @@
   display: block;
 }
 
-.photo-day__desktop-style {
+.photo-day__style {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -52,7 +52,7 @@
   background-repeat: no-repeat;
   width: 23px;
   height: 21px;
-  bottom: 5px;
+  bottom: 3px;
   left: 0;
 }
 
@@ -83,10 +83,21 @@
     padding-top: 0;
   }
 
+  .photo-day__style {
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+  }
+
   .photo-day__describe {
     width: 250px;
     margin: 0;
     margin-bottom: 15px;
+  }
+
+  .photo-day__number {
+    margin-right: 20px;
+    margin-bottom: 16px;
   }
 
   .photo-day__link {
@@ -102,18 +113,12 @@
     margin: 0;
   }
 
-  .photo-day__desktop-style {
-    flex-direction: row;
-  }
-
   .photo-day__photo-like {
     padding: 0;
-    padding-top: 10px;
-    margin-left: 346px;
   }
 
   .photo-day__photo-like::before {
-    bottom: 31px;
+    bottom: 3px;
     left: -32px;
   }
 
@@ -132,7 +137,7 @@
     padding-top: 22px;
   }
 
-  .photo-day__desktop-style {
+  .photo-day__style {
     position: absolute;
     width: 1200px;
     min-height: 80px;
@@ -140,7 +145,12 @@
     bottom: 0;
   }
 
-  .photo-day__photo-like--count::before {
+  .photo-day__number {
+    margin-bottom: 0;
+    margin-top: 5px;
+  }
+
+  .photo-day__photo-like::before {
     background-image: url("../img/stack.svg#icon-like-white");
     left: -32px;
   }
