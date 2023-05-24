@@ -7,6 +7,10 @@
   padding: 16px;
   width: 280px;
 
+  &::placeholder {
+    color: rgb(0, 0, 0, 0.3);
+  }
+
   &:hover {
     background-color: #e5e5e5;
   }

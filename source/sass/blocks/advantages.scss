@@ -121,6 +121,7 @@
 @media (min-width: $tablet-width) {
   .advantages__listing {
     padding-top: 52px;
+    padding-bottom: 30px;
     width: 256px;
   }
 
@@ -129,8 +130,8 @@
   }
 
   .advantages__description {
-    margin-bottom: 30px;
     width: 192px;
+    margin: 0 auto;
   }
 
   .advantages__preview {
@@ -159,6 +160,11 @@
 
   .advantages__listing--order {
     order: 1;
+  }
+
+  .advantages__image {
+    height: 100%;
+    object-fit: cover;
   }
 
   .advantages__additional {

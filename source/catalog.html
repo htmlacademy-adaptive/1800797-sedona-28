@@ -61,6 +61,7 @@
           <p class="preview__description-catalog description">Не можете решиться на путешествие из-за курса? Фотографии
             помогут вам забыть о политике и экономике.</p>
         </div>
+        <!--
         <div class="presentation__photo-day photo-day">
           <a class="photo-day__link" href="#">
             <picture>
@@ -80,7 +81,29 @@
             <b class="photo-day__photo-like photo-day__photo-like--count description description--card">1350</b>
           </div>
         </div>
+        -->
         <ul class="presentation__list card">
+          <li class="card__item">
+            <div class="card__photo-day photo-day">
+              <a class="photo-day__link" href="#">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/catalog-desktop/photo-1-desktop.webp 1x, img/catalog-desktop/photo-1-desktop@2x.webp 2x" width="1200" height="400">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog-tablet/photo-1-tablet.webp 1x, img/catalog-tablet/photo-1-tablet@2x.webp 2x" width="648" height="400">
+                  <source type="image/webp" srcset="img/catalog-mobile/photo-1-mobile.webp 1x, img/catalog-mobile/photo-1-mobile@2x.webp 2x" width="280" height="280">
+
+                  <source media="(min-width: 1200px)" srcset="img/catalog-desktop/photo-1-desktop.jpg 1x, img/catalog-desktop/photo-1-desktop@2x.jpg 2x" width="1200" height="400">
+                  <source media="(min-width: 768px)" srcset="img/catalog-tablet/photo-1-tablet.jpg 1x, img/catalog-tablet/photo-1-tablet@2x.jpg 2x" width="648" height="400">
+                  <img class="photo-day__image" src="img/catalog-mobile/photo-1-mobile.jpg" srcset="img/catalog-mobile/photo-1-mobile@2x.jpg 2x" width="280" height="280"
+                  alt="Дорога в Седону на закате.">
+                </picture>
+              </a>
+              <div class="photo-day__desktop-style">
+                <h3 class="photo-day__photo-title description description--card">Неродные просторы</h3>
+                <p class="photo-day__photo-author description description--author">Автор фото: Борис</p>
+                <b class="photo-day__photo-like photo-day__photo-like--count description description--card">1350</b>
+              </div>
+            </div>
+          </li>
           <li class="card__item">
             <a class="card__photo-link" href="#">
               <picture>
