@@ -3,8 +3,6 @@
 
 .photo-day {
   width: 280px;
-  // padding-top: 24px;
-  // padding-bottom: 25px;
   position: relative;
 }
 
@@ -65,15 +63,6 @@
     top: -26px;
     right: -20px;
   }
-
-  // .photo-day::after {
-  //   position: absolute;
-  //   content: "";
-  //   border-bottom: 1px solid #e5e5e5;
-  //   width: 320px;
-  //   bottom: 0;
-  //   right: -20px;
-  // }
 }
 
 @media (min-width: $tablet-width) {
