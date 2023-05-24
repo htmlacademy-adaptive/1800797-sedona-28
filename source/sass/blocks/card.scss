@@ -26,6 +26,16 @@
   margin-bottom: 15px;
 }
 
+.card__photo-style {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.card__photo-describe {
+  margin-bottom: 16px;
+}
+
 .card__photo-title {
   margin: 0;
   margin-bottom: 1px;
@@ -34,7 +44,6 @@
 
 .card__photo-author {
   margin: 0;
-  margin-bottom: 16px;
   padding: 0;
 }
 
@@ -77,8 +86,7 @@
 
   .card__item {
     width: 324px;
-    padding-top: 0;
-    padding-bottom: 15px;
+    padding: 0;
     position: relative;
     background-color: #f2f2f2;
   }
@@ -89,6 +97,10 @@
 
   .card__photo-link {
     margin-bottom: 22px;
+  }
+
+  .card__photo-describe {
+    margin-bottom: 15px;
   }
 
   .card__item--colored {
